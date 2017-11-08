@@ -3,9 +3,8 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 
-    <title>ckmutil API documentation</title>
-    <meta name="description" content="Package containing useful functions to deal with the
-Cabibbo-Kobayashi-Maskawa (CKM) quark mixing ma..." />
+    <title>ckmutil.diag API documentation</title>
+    <meta name="description" content="Functions for the diagonalization of fermion mass matrices." />
 
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Noto+Sans:400' rel='stylesheet' type='text/css'>
@@ -1052,17 +1051,15 @@ table {
     <h1>Index</h1>
     <ul id="index">
 
+    <li class="set"><h3><a href="#header-functions">Functions</a></h3>
+      
+  <ul>
+    <li class="mono"><a href="#ckmutil.diag.msvd">msvd</a></li>
+  </ul>
 
-
-    <li class="set"><h3><a href="#header-submodules">Sub-modules</a></h3>
-      <ul>
-        <li class="mono"><a href="ckm.m.html">ckmutil.ckm</a></li>
-        <li class="mono"><a href="diag.m.html">ckmutil.diag</a></li>
-        <li class="mono"><a href="phases.m.html">ckmutil.phases</a></li>
-        <li class="mono"><a href="test_ckm.m.html">ckmutil.test_ckm</a></li>
-        <li class="mono"><a href="test_phases.m.html">ckmutil.test_phases</a></li>
-      </ul>
     </li>
+
+
     </ul>
   </div>
 
@@ -1074,18 +1071,28 @@ table {
 
 
   <header id="section-intro">
-  <h1 class="title"><span class="name">ckmutil</span> module</h1>
-  <p>Package containing useful functions to deal with the
-Cabibbo-Kobayashi-Maskawa (CKM) quark mixing matrix or
-the Pontecorvo-Maki-Nakagawa-Sakata (PMNS) lepton mixing matrix
-in high energy physics.</p>
+  <h1 class="title"><span class="name">ckmutil.diag</span> module</h1>
+  <p>Functions for the diagonalization of fermion mass matrices.</p>
   
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil" class="source">
-    <div class="codehilite"><pre><span></span><span class="sd">&quot;&quot;&quot;Package containing useful functions to deal with the</span>
-<span class="sd">Cabibbo-Kobayashi-Maskawa (CKM) quark mixing matrix or</span>
-<span class="sd">the Pontecorvo-Maki-Nakagawa-Sakata (PMNS) lepton mixing matrix</span>
-<span class="sd">in high energy physics.&quot;&quot;&quot;</span>
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.diag', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.diag" class="source">
+    <div class="codehilite"><pre><span></span><span class="sd">&quot;&quot;&quot;Functions for the diagonalization of fermion mass matrices.&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+
+<span class="k">def</span> <span class="nf">msvd</span><span class="p">(</span><span class="n">m</span><span class="p">):</span>
+  <span class="sd">&quot;&quot;&quot;Modified singular value decomposition.</span>
+
+<span class="sd">  Returns U, S, V where Udagger M V = diag(S) and the singular values</span>
+<span class="sd">  are sorted in ascending order (small to large).</span>
+<span class="sd">  &quot;&quot;&quot;</span>
+  <span class="n">u</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="n">vdgr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">svd</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+  <span class="n">order</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">argsort</span><span class="p">()</span>
+  <span class="c1"># reverse the n first columns of u</span>
+  <span class="n">s</span> <span class="o">=</span> <span class="n">s</span><span class="p">[</span><span class="n">order</span><span class="p">]</span>
+  <span class="n">u</span><span class="o">=</span> <span class="n">u</span><span class="p">[:,</span><span class="n">order</span><span class="p">]</span>
+  <span class="n">vdgr</span> <span class="o">=</span> <span class="n">vdgr</span><span class="p">[</span><span class="n">order</span><span class="p">]</span>
+  <span class="k">return</span> <span class="n">u</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="n">vdgr</span><span class="o">.</span><span class="n">conj</span><span class="p">()</span><span class="o">.</span><span class="n">T</span>
 </pre></div>
 
   </div>
@@ -1094,44 +1101,44 @@ in high energy physics.</p>
 
   <section id="section-items">
 
-
-
-    <h2 class="section-title" id="header-submodules">Sub-modules</h2>
-      <div class="item">
-      <p class="name"><a href="ckm.m.html">ckmutil.ckm</a></p>
+    <h2 class="section-title" id="header-functions">Functions</h2>
       
-  
-    <div class="desc"><p>Functions needed for the CKM matrix as well as for frequently used
-combinations of CKM elements.</p></div>
+  <div class="item">
+    <div class="name def" id="ckmutil.diag.msvd">
+    <p>def <span class="ident">msvd</span>(</p><p>m)</p>
+    </div>
+    
 
-      </div>
-      <div class="item">
-      <p class="name"><a href="diag.m.html">ckmutil.diag</a></p>
-      
+    
   
-    <div class="desc"><p>Functions for the diagonalization of fermion mass matrices.</p></div>
+    <div class="desc"><p>Modified singular value decomposition.</p>
+<p>Returns U, S, V where Udagger M V = diag(S) and the singular values
+are sorted in ascending order (small to large).</p></div>
+  <div class="source_cont">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.diag.msvd', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.diag.msvd" class="source">
+    <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">msvd</span><span class="p">(</span><span class="n">m</span><span class="p">):</span>
+  <span class="sd">&quot;&quot;&quot;Modified singular value decomposition.</span>
 
-      </div>
-      <div class="item">
-      <p class="name"><a href="phases.m.html">ckmutil.phases</a></p>
-      
+<span class="sd">  Returns U, S, V where Udagger M V = diag(S) and the singular values</span>
+<span class="sd">  are sorted in ascending order (small to large).</span>
+<span class="sd">  &quot;&quot;&quot;</span>
+  <span class="n">u</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="n">vdgr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">svd</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+  <span class="n">order</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">argsort</span><span class="p">()</span>
+  <span class="c1"># reverse the n first columns of u</span>
+  <span class="n">s</span> <span class="o">=</span> <span class="n">s</span><span class="p">[</span><span class="n">order</span><span class="p">]</span>
+  <span class="n">u</span><span class="o">=</span> <span class="n">u</span><span class="p">[:,</span><span class="n">order</span><span class="p">]</span>
+  <span class="n">vdgr</span> <span class="o">=</span> <span class="n">vdgr</span><span class="p">[</span><span class="n">order</span><span class="p">]</span>
+  <span class="k">return</span> <span class="n">u</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="n">vdgr</span><span class="o">.</span><span class="n">conj</span><span class="p">()</span><span class="o">.</span><span class="n">T</span>
+</pre></div>
+
+  </div>
+</div>
+
+  </div>
   
-    <div class="desc"><p>Functions for the extraction of mixing angles and phases and for rephasing
-general mixing matrices to standard parametrizations.</p></div>
 
-      </div>
-      <div class="item">
-      <p class="name"><a href="test_ckm.m.html">ckmutil.test_ckm</a></p>
-      
-  
 
-      </div>
-      <div class="item">
-      <p class="name"><a href="test_phases.m.html">ckmutil.test_phases</a></p>
-      
-  
-
-      </div>
   </section>
 
     </article>
