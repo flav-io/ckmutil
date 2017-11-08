@@ -2,6 +2,7 @@ language: python
 python:
   - "3.4"
   - "3.5"
+  - "3.6"
 
 notifications:
   email: false
@@ -21,7 +22,7 @@ before_install:
 
 install:
   - conda install --yes python=$TRAVIS_PYTHON_VERSION numpy nose
-  - pip install ckmutil
+  - pip install .
   - pip install coveralls
 
 script: nosetests --with-coverage --cover-package=ckmutil
