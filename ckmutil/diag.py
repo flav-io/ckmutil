@@ -15,3 +15,15 @@ def msvd(m):
   u= u[:,order]
   vdgr = vdgr[order]
   return u, s, vdgr.conj().T
+
+
+def mtakfac(m):
+  """Modified Takagi factorization of a (complex) symmetric matrix.
+
+  Returns U, S where U^T M U = diag(S) and the singular values
+  are sorted in ascending order (small to large).
+  """
+  u, s, v = msvd(m)
+  f = np.sqrt(u.conj().T @ v.conj())
+  w = v @ f
+  return w, s
