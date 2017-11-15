@@ -2,7 +2,7 @@ import unittest
 import numpy.testing as npt
 from ckmutil.phases import *
 from ckmutil.ckm import ckm_standard
-from ckmutil.diag import msvd
+from ckmutil.diag import msvd, mtakfac
 import numpy as np
 from math import sin, cos
 from cmath import exp
@@ -50,3 +50,27 @@ class TestPhases(unittest.TestCase):
         K_std = unitary_matrix(f['t12'], f['t13'], f['t23'], f['delta'], 0, 0, 0, 0, 0)
         # ... should be equal!
         npt.assert_array_almost_equal(K, K_std, decimal=10)
+
+    def test_rephasing_pmns(self):
+        # a random unitary matrix
+        U = np.array([[-0.4825-0.5529j,  0.6076-0.0129j,  0.1177+0.2798j],
+                   [ 0.1227-0.5748j, -0.1685-0.5786j, -0.2349-0.486j ],
+                   [-0.0755+0.3322j,  0.5157+0.0393j, -0.7321-0.2837j]])
+        # a random complex matrix
+        Me = np.array([[ 0.6126+0.9819j,  0.0165+0.3709j,  0.0114+0.7819j],
+            [ 0.6374+0.8631j,  0.1249+0.8346j,  0.6940+0.4495j],
+            [ 0.1652+0.9667j,  0.4952+0.1281j,  0.7719+0.2325j]])
+        # a random complex symmetric matrix
+        Mnu = np.array([[ 0.60203884+0.63349682j,  0.36913812+0.35568326j,  0.56965889+0.42305627j],
+           [ 0.36913812+0.35568326j,  0.62439443+0.34918309j,  0.55097246+0.55861965j],
+           [ 0.56965889+0.42305627j,  0.55097246+0.55861965j, 0.19434061+0.57985534j]])
+        UeL, Se, UeR = msvd(Me)
+        Unu, Snu = mtakfac(Mnu)
+        f = mixing_phases(UeL.conj().T @ Unu)
+        Unu_, UeL_, UeR_ = rephase_pmns_standard(Unu, UeL, UeR)
+        # rephased PMNS
+        U = UeL_.conj().T @ Unu_
+        # PMNS in standard parametrization
+        U_std = unitary_matrix(f['t12'], f['t13'], f['t23'], f['delta'], 0, 0, 0, f['phi1'], f['phi2'])
+        # ... should be equal!
+        npt.assert_array_almost_equal(U, U_std, decimal=5)

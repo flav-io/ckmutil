@@ -1,5 +1,4 @@
-"""Functions needed for the CKM matrix as well as for frequently used
-combinations of CKM elements."""
+"""Functions needed for the CKM quark mixing matrix."""
 
 from math import cos,sin
 from cmath import exp, sqrt
