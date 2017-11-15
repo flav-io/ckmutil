@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 
 setup(name='ckmutil',
-      version='0.3',
+      version='0.3.1',
       author='David M. Straub',
       author_email='david.straub@tum.de',
       url='https://davidmstraub.github.io/ckmutil',
