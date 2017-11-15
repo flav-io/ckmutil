@@ -1055,6 +1055,7 @@ table {
       
   <ul>
     <li class="mono"><a href="#ckmutil.diag.msvd">msvd</a></li>
+    <li class="mono"><a href="#ckmutil.diag.mtakfac">mtakfac</a></li>
   </ul>
 
     </li>
@@ -1093,6 +1094,18 @@ table {
   <span class="n">u</span><span class="o">=</span> <span class="n">u</span><span class="p">[:,</span><span class="n">order</span><span class="p">]</span>
   <span class="n">vdgr</span> <span class="o">=</span> <span class="n">vdgr</span><span class="p">[</span><span class="n">order</span><span class="p">]</span>
   <span class="k">return</span> <span class="n">u</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="n">vdgr</span><span class="o">.</span><span class="n">conj</span><span class="p">()</span><span class="o">.</span><span class="n">T</span>
+
+
+<span class="k">def</span> <span class="nf">mtakfac</span><span class="p">(</span><span class="n">m</span><span class="p">):</span>
+  <span class="sd">&quot;&quot;&quot;Modified Takagi factorization of a (complex) symmetric matrix.</span>
+
+<span class="sd">  Returns U, S where U^T M U = diag(S) and the singular values</span>
+<span class="sd">  are sorted in ascending order (small to large).</span>
+<span class="sd">  &quot;&quot;&quot;</span>
+  <span class="n">u</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">msvd</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+  <span class="n">f</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">u</span><span class="o">.</span><span class="n">conj</span><span class="p">()</span><span class="o">.</span><span class="n">T</span> <span class="err">@</span> <span class="n">v</span><span class="o">.</span><span class="n">conj</span><span class="p">())</span>
+  <span class="n">w</span> <span class="o">=</span> <span class="n">v</span> <span class="err">@</span> <span class="n">f</span>
+  <span class="k">return</span> <span class="n">w</span><span class="p">,</span> <span class="n">s</span>
 </pre></div>
 
   </div>
@@ -1130,6 +1143,38 @@ are sorted in ascending order (small to large).</p></div>
   <span class="n">u</span><span class="o">=</span> <span class="n">u</span><span class="p">[:,</span><span class="n">order</span><span class="p">]</span>
   <span class="n">vdgr</span> <span class="o">=</span> <span class="n">vdgr</span><span class="p">[</span><span class="n">order</span><span class="p">]</span>
   <span class="k">return</span> <span class="n">u</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="n">vdgr</span><span class="o">.</span><span class="n">conj</span><span class="p">()</span><span class="o">.</span><span class="n">T</span>
+</pre></div>
+
+  </div>
+</div>
+
+  </div>
+  
+      
+  <div class="item">
+    <div class="name def" id="ckmutil.diag.mtakfac">
+    <p>def <span class="ident">mtakfac</span>(</p><p>m)</p>
+    </div>
+    
+
+    
+  
+    <div class="desc"><p>Modified Takagi factorization of a (complex) symmetric matrix.</p>
+<p>Returns U, S where U^T M U = diag(S) and the singular values
+are sorted in ascending order (small to large).</p></div>
+  <div class="source_cont">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.diag.mtakfac', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.diag.mtakfac" class="source">
+    <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">mtakfac</span><span class="p">(</span><span class="n">m</span><span class="p">):</span>
+  <span class="sd">&quot;&quot;&quot;Modified Takagi factorization of a (complex) symmetric matrix.</span>
+
+<span class="sd">  Returns U, S where U^T M U = diag(S) and the singular values</span>
+<span class="sd">  are sorted in ascending order (small to large).</span>
+<span class="sd">  &quot;&quot;&quot;</span>
+  <span class="n">u</span><span class="p">,</span> <span class="n">s</span><span class="p">,</span> <span class="n">v</span> <span class="o">=</span> <span class="n">msvd</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+  <span class="n">f</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">u</span><span class="o">.</span><span class="n">conj</span><span class="p">()</span><span class="o">.</span><span class="n">T</span> <span class="err">@</span> <span class="n">v</span><span class="o">.</span><span class="n">conj</span><span class="p">())</span>
+  <span class="n">w</span> <span class="o">=</span> <span class="n">v</span> <span class="err">@</span> <span class="n">f</span>
+  <span class="k">return</span> <span class="n">w</span><span class="p">,</span> <span class="n">s</span>
 </pre></div>
 
   </div>

@@ -3,7 +3,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
 
-    <title>ckmutil.test_phases API documentation</title>
+    <title>ckmutil.test_diag API documentation</title>
     <meta name="description" content="" />
 
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300' rel='stylesheet' type='text/css'>
@@ -1050,90 +1050,90 @@ table {
   <div id="sidebar">
     <h1>Index</h1>
     <ul id="index">
-
-    <li class="set"><h3><a href="#header-functions">Functions</a></h3>
+    <li class="set"><h3><a href="#header-variables">Module variables</a></h3>
       
   <ul>
-    <li class="mono"><a href="#ckmutil.test_phases.diagonal_phase_matrix">diagonal_phase_matrix</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.unitary_matrix">unitary_matrix</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.Mc">Mc</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.Mcs">Mcs</a></li>
   </ul>
 
     </li>
 
+
     <li class="set"><h3><a href="#header-classes">Classes</a></h3>
       <ul>
         <li class="mono">
-        <span class="class_name"><a href="#ckmutil.test_phases.TestPhases">TestPhases</a></span>
+        <span class="class_name"><a href="#ckmutil.test_diag.TestDiag">TestDiag</a></span>
         
           
   <ul>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.__init__">__init__</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.addCleanup">addCleanup</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.addTypeEqualityFunc">addTypeEqualityFunc</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.assertAlmostEqual">assertAlmostEqual</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.assertAlmostEquals">assertAlmostEquals</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.assertCountEqual">assertCountEqual</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.assertDictContainsSubset">assertDictContainsSubset</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.assertDictEqual">assertDictEqual</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.assertEqual">assertEqual</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.assertEquals">assertEquals</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.assertFalse">assertFalse</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.assertGreater">assertGreater</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.assertGreaterEqual">assertGreaterEqual</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.assertIn">assertIn</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.assertIs">assertIs</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.assertIsInstance">assertIsInstance</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.assertIsNone">assertIsNone</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.assertIsNot">assertIsNot</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.assertIsNotNone">assertIsNotNone</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.assertLess">assertLess</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.assertLessEqual">assertLessEqual</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.assertListEqual">assertListEqual</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.assertLogs">assertLogs</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.assertMultiLineEqual">assertMultiLineEqual</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.assertNotAlmostEqual">assertNotAlmostEqual</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.assertNotAlmostEquals">assertNotAlmostEquals</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.assertNotEqual">assertNotEqual</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.assertNotEquals">assertNotEquals</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.assertNotIn">assertNotIn</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.assertNotIsInstance">assertNotIsInstance</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.assertNotRegex">assertNotRegex</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.assertNotRegexpMatches">assertNotRegexpMatches</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.assertRaises">assertRaises</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.assertRaisesRegex">assertRaisesRegex</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.assertRaisesRegexp">assertRaisesRegexp</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.assertRegex">assertRegex</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.assertRegexpMatches">assertRegexpMatches</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.assertSequenceEqual">assertSequenceEqual</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.assertSetEqual">assertSetEqual</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.assertTrue">assertTrue</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.assertTupleEqual">assertTupleEqual</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.assertWarns">assertWarns</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.assertWarnsRegex">assertWarnsRegex</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.assert_">assert_</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.countTestCases">countTestCases</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.debug">debug</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.defaultTestResult">defaultTestResult</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.doCleanups">doCleanups</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.fail">fail</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.failIf">failIf</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.failIfAlmostEqual">failIfAlmostEqual</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.failIfEqual">failIfEqual</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.failUnless">failUnless</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.failUnlessAlmostEqual">failUnlessAlmostEqual</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.failUnlessEqual">failUnlessEqual</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.failUnlessRaises">failUnlessRaises</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.id">id</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.run">run</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.setUp">setUp</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.shortDescription">shortDescription</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.skipTest">skipTest</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.subTest">subTest</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.tearDown">tearDown</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.test_rephasing">test_rephasing</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.test_rephasing_pmns">test_rephasing_pmns</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.setUpClass">setUpClass</a></li>
-    <li class="mono"><a href="#ckmutil.test_phases.TestPhases.tearDownClass">tearDownClass</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.__init__">__init__</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.addCleanup">addCleanup</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.addTypeEqualityFunc">addTypeEqualityFunc</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.assertAlmostEqual">assertAlmostEqual</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.assertAlmostEquals">assertAlmostEquals</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.assertCountEqual">assertCountEqual</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.assertDictContainsSubset">assertDictContainsSubset</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.assertDictEqual">assertDictEqual</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.assertEqual">assertEqual</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.assertEquals">assertEquals</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.assertFalse">assertFalse</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.assertGreater">assertGreater</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.assertGreaterEqual">assertGreaterEqual</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.assertIn">assertIn</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.assertIs">assertIs</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.assertIsInstance">assertIsInstance</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.assertIsNone">assertIsNone</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.assertIsNot">assertIsNot</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.assertIsNotNone">assertIsNotNone</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.assertLess">assertLess</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.assertLessEqual">assertLessEqual</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.assertListEqual">assertListEqual</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.assertLogs">assertLogs</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.assertMultiLineEqual">assertMultiLineEqual</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.assertNotAlmostEqual">assertNotAlmostEqual</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.assertNotAlmostEquals">assertNotAlmostEquals</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.assertNotEqual">assertNotEqual</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.assertNotEquals">assertNotEquals</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.assertNotIn">assertNotIn</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.assertNotIsInstance">assertNotIsInstance</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.assertNotRegex">assertNotRegex</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.assertNotRegexpMatches">assertNotRegexpMatches</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.assertRaises">assertRaises</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.assertRaisesRegex">assertRaisesRegex</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.assertRaisesRegexp">assertRaisesRegexp</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.assertRegex">assertRegex</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.assertRegexpMatches">assertRegexpMatches</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.assertSequenceEqual">assertSequenceEqual</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.assertSetEqual">assertSetEqual</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.assertTrue">assertTrue</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.assertTupleEqual">assertTupleEqual</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.assertWarns">assertWarns</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.assertWarnsRegex">assertWarnsRegex</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.assert_">assert_</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.countTestCases">countTestCases</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.debug">debug</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.defaultTestResult">defaultTestResult</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.doCleanups">doCleanups</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.fail">fail</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.failIf">failIf</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.failIfAlmostEqual">failIfAlmostEqual</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.failIfEqual">failIfEqual</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.failUnless">failUnless</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.failUnlessAlmostEqual">failUnlessAlmostEqual</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.failUnlessEqual">failUnlessEqual</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.failUnlessRaises">failUnlessRaises</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.id">id</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.run">run</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.setUp">setUp</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.shortDescription">shortDescription</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.skipTest">skipTest</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.subTest">subTest</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.tearDown">tearDown</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.test_svd">test_svd</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.test_takfac">test_takfac</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.setUpClass">setUpClass</a></li>
+    <li class="mono"><a href="#ckmutil.test_diag.TestDiag.tearDownClass">tearDownClass</a></li>
   </ul>
 
         </li>
@@ -1151,87 +1151,37 @@ table {
 
 
   <header id="section-intro">
-  <h1 class="title"><span class="name">ckmutil.test_phases</span> module</h1>
+  <h1 class="title"><span class="name">ckmutil.test_diag</span> module</h1>
   
   
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag" class="source">
     <div class="codehilite"><pre><span></span><span class="kn">import</span> <span class="nn">unittest</span>
 <span class="kn">import</span> <span class="nn">numpy.testing</span> <span class="kn">as</span> <span class="nn">npt</span>
-<span class="kn">from</span> <span class="nn">ckmutil.phases</span> <span class="kn">import</span> <span class="o">*</span>
-<span class="kn">from</span> <span class="nn">ckmutil.ckm</span> <span class="kn">import</span> <span class="n">ckm_standard</span>
 <span class="kn">from</span> <span class="nn">ckmutil.diag</span> <span class="kn">import</span> <span class="n">msvd</span><span class="p">,</span> <span class="n">mtakfac</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
-<span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">sin</span><span class="p">,</span> <span class="n">cos</span>
-<span class="kn">from</span> <span class="nn">cmath</span> <span class="kn">import</span> <span class="n">exp</span>
 
-<span class="c1"># some auxiliary functions</span>
-<span class="k">def</span> <span class="nf">diagonal_phase_matrix</span><span class="p">(</span><span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="p">,</span> <span class="n">a3</span><span class="p">):</span>
-    <span class="sa">r</span><span class="sd">&quot;&quot;&quot;A diagonal $3\times 3$ matrix with $jj$-element $e^{i a_j}$&quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">diag</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="mi">1j</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="p">,</span> <span class="n">a3</span><span class="p">])))</span>
-<span class="c1"># general CKM/PMNS-like matrix</span>
-<span class="k">def</span> <span class="nf">unitary_matrix</span><span class="p">(</span><span class="n">t12</span><span class="p">,</span> <span class="n">t13</span><span class="p">,</span> <span class="n">t23</span><span class="p">,</span> <span class="n">delta</span><span class="p">,</span> <span class="n">delta1</span><span class="p">,</span> <span class="n">delta2</span><span class="p">,</span> <span class="n">delta3</span><span class="p">,</span> <span class="n">phi1</span><span class="p">,</span> <span class="n">phi2</span><span class="p">):</span>
-    <span class="n">ph1</span> <span class="o">=</span> <span class="n">diagonal_phase_matrix</span><span class="p">(</span><span class="n">delta1</span><span class="p">,</span> <span class="n">delta2</span><span class="p">,</span> <span class="n">delta3</span><span class="p">)</span>
-    <span class="n">ph2</span> <span class="o">=</span> <span class="n">diagonal_phase_matrix</span><span class="p">(</span><span class="o">-</span><span class="n">phi1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="n">phi2</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
-    <span class="n">ckm</span> <span class="o">=</span> <span class="n">ckm_standard</span><span class="p">(</span><span class="n">t12</span><span class="p">,</span> <span class="n">t13</span><span class="p">,</span> <span class="n">t23</span><span class="p">,</span> <span class="n">delta</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">ph1</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">ckm</span><span class="p">,</span> <span class="n">ph2</span><span class="p">))</span>
+<span class="c1"># complex</span>
+<span class="n">Mc</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span> <span class="mf">0.82469</span><span class="o">+</span><span class="mf">0.62495j</span><span class="p">,</span>  <span class="mf">0.37768</span><span class="o">+</span><span class="mf">0.28744j</span><span class="p">,</span>  <span class="mf">0.40011</span><span class="o">+</span><span class="mf">0.93478j</span><span class="p">],</span>
+       <span class="p">[</span> <span class="mf">0.85475</span><span class="o">+</span><span class="mf">0.60855j</span><span class="p">,</span>  <span class="mf">0.64045</span><span class="o">+</span><span class="mf">0.93049j</span><span class="p">,</span>  <span class="mf">0.39019</span><span class="o">+</span><span class="mf">0.6188j</span> <span class="p">],</span>
+       <span class="p">[</span> <span class="mf">0.68798</span><span class="o">+</span><span class="mf">0.40478j</span><span class="p">,</span>  <span class="mf">0.38995</span><span class="o">+</span><span class="mf">0.86032j</span><span class="p">,</span>  <span class="mf">0.20555</span><span class="o">+</span><span class="mf">0.601j</span>  <span class="p">]])</span>
+<span class="c1"># complex symmetric</span>
+<span class="n">Mcs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span> <span class="mf">0.82794</span><span class="o">+</span><span class="mf">0.4311j</span> <span class="p">,</span>  <span class="mf">0.33124</span><span class="o">+</span><span class="mf">0.73104j</span><span class="p">,</span>  <span class="mf">0.77668</span><span class="o">+</span><span class="mf">0.14696j</span><span class="p">],</span>
+       <span class="p">[</span> <span class="mf">0.33124</span><span class="o">+</span><span class="mf">0.73104j</span><span class="p">,</span>  <span class="mf">0.18407</span><span class="o">+</span><span class="mf">0.67383j</span><span class="p">,</span>  <span class="mf">0.46557</span><span class="o">+</span><span class="mf">0.14199j</span><span class="p">],</span>
+       <span class="p">[</span> <span class="mf">0.77668</span><span class="o">+</span><span class="mf">0.14696j</span><span class="p">,</span>  <span class="mf">0.46557</span><span class="o">+</span><span class="mf">0.14199j</span><span class="p">,</span>  <span class="mf">0.94771</span><span class="o">+</span><span class="mf">0.73933j</span><span class="p">]])</span>
 
-<span class="k">class</span> <span class="nc">TestPhases</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">test_rephasing</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="c1"># a random unitary matrix</span>
-        <span class="n">U</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="o">-</span><span class="mf">0.4825</span><span class="o">-</span><span class="mf">0.5529j</span><span class="p">,</span>  <span class="mf">0.6076</span><span class="o">-</span><span class="mf">0.0129j</span><span class="p">,</span>  <span class="mf">0.1177</span><span class="o">+</span><span class="mf">0.2798j</span><span class="p">],</span>
-                   <span class="p">[</span> <span class="mf">0.1227</span><span class="o">-</span><span class="mf">0.5748j</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.1685</span><span class="o">-</span><span class="mf">0.5786j</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.2349</span><span class="o">-</span><span class="mf">0.486j</span> <span class="p">],</span>
-                   <span class="p">[</span><span class="o">-</span><span class="mf">0.0755</span><span class="o">+</span><span class="mf">0.3322j</span><span class="p">,</span>  <span class="mf">0.5157</span><span class="o">+</span><span class="mf">0.0393j</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.7321</span><span class="o">-</span><span class="mf">0.2837j</span><span class="p">]])</span>
-        <span class="n">f</span> <span class="o">=</span> <span class="n">mixing_phases</span><span class="p">(</span><span class="n">U</span><span class="p">)</span>
-        <span class="c1"># check that matrix reconstructed from extracted angles and phases</span>
-        <span class="c1"># coincides with original matrix</span>
-        <span class="n">npt</span><span class="o">.</span><span class="n">assert_array_almost_equal</span><span class="p">(</span><span class="n">U</span><span class="p">,</span> <span class="n">unitary_matrix</span><span class="p">(</span><span class="o">**</span><span class="n">f</span><span class="p">),</span>
-            <span class="n">decimal</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
-        <span class="c1"># pathological case: unit matrix. Check that everything is zero</span>
-        <span class="n">f</span> <span class="o">=</span> <span class="n">mixing_phases</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">eye</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
-        <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">f</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="s1">&#39;{} is not zero&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">k</span><span class="p">))</span>
-        <span class="c1"># random mass matrices</span>
-        <span class="n">Mu</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span> <span class="mf">0.6126</span><span class="o">+</span><span class="mf">0.9819j</span><span class="p">,</span>  <span class="mf">0.0165</span><span class="o">+</span><span class="mf">0.3709j</span><span class="p">,</span>  <span class="mf">0.0114</span><span class="o">+</span><span class="mf">0.7819j</span><span class="p">],</span>
-            <span class="p">[</span> <span class="mf">0.6374</span><span class="o">+</span><span class="mf">0.8631j</span><span class="p">,</span>  <span class="mf">0.1249</span><span class="o">+</span><span class="mf">0.8346j</span><span class="p">,</span>  <span class="mf">0.6940</span><span class="o">+</span><span class="mf">0.4495j</span><span class="p">],</span>
-            <span class="p">[</span> <span class="mf">0.1652</span><span class="o">+</span><span class="mf">0.9667j</span><span class="p">,</span>  <span class="mf">0.4952</span><span class="o">+</span><span class="mf">0.1281j</span><span class="p">,</span>  <span class="mf">0.7719</span><span class="o">+</span><span class="mf">0.2325j</span><span class="p">]])</span>
-        <span class="n">Md</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span> <span class="mf">0.2874</span><span class="o">+</span><span class="mf">0.2065j</span><span class="p">,</span>  <span class="mf">0.2210</span><span class="o">+</span><span class="mf">0.9077j</span><span class="p">,</span>  <span class="mf">0.4053</span><span class="o">+</span><span class="mf">0.454j</span> <span class="p">],</span>
-            <span class="p">[</span> <span class="mf">0.0339</span><span class="o">+</span><span class="mf">0.8332j</span><span class="p">,</span>  <span class="mf">0.5286</span><span class="o">+</span><span class="mf">0.6339j</span><span class="p">,</span>  <span class="mf">0.3142</span><span class="o">+</span><span class="mf">0.113j</span> <span class="p">],</span>
-            <span class="p">[</span> <span class="mf">0.9379</span><span class="o">+</span><span class="mf">0.2952j</span><span class="p">,</span>  <span class="mf">0.8488</span><span class="o">+</span><span class="mf">0.634j</span> <span class="p">,</span>  <span class="mf">0.1413</span><span class="o">+</span><span class="mf">0.9175j</span><span class="p">]])</span>
-        <span class="n">UuL</span><span class="p">,</span> <span class="n">Su</span><span class="p">,</span> <span class="n">UuR</span> <span class="o">=</span> <span class="n">msvd</span><span class="p">(</span><span class="n">Mu</span><span class="p">)</span>
-        <span class="n">UdL</span><span class="p">,</span> <span class="n">Sd</span><span class="p">,</span> <span class="n">UdR</span> <span class="o">=</span> <span class="n">msvd</span><span class="p">(</span><span class="n">Md</span><span class="p">)</span>
-        <span class="n">f</span> <span class="o">=</span> <span class="n">mixing_phases</span><span class="p">(</span><span class="n">UuL</span><span class="o">.</span><span class="n">conj</span><span class="p">()</span><span class="o">.</span><span class="n">T</span> <span class="err">@</span> <span class="n">UdL</span><span class="p">)</span>
-        <span class="n">UuL_</span><span class="p">,</span> <span class="n">UdL_</span><span class="p">,</span> <span class="n">UuR_</span><span class="p">,</span> <span class="n">UdR_</span> <span class="o">=</span> <span class="n">rephase_standard</span><span class="p">(</span><span class="n">UuL</span><span class="p">,</span> <span class="n">UdL</span><span class="p">,</span> <span class="n">UuR</span><span class="p">,</span> <span class="n">UdR</span><span class="p">)</span>
-        <span class="c1"># rephased CKM</span>
-        <span class="n">K</span> <span class="o">=</span> <span class="n">UuL_</span><span class="o">.</span><span class="n">conj</span><span class="p">()</span><span class="o">.</span><span class="n">T</span> <span class="err">@</span> <span class="n">UdL_</span>
-        <span class="c1"># CKM in standard parametrization</span>
-        <span class="n">K_std</span> <span class="o">=</span> <span class="n">unitary_matrix</span><span class="p">(</span><span class="n">f</span><span class="p">[</span><span class="s1">&#39;t12&#39;</span><span class="p">],</span> <span class="n">f</span><span class="p">[</span><span class="s1">&#39;t13&#39;</span><span class="p">],</span> <span class="n">f</span><span class="p">[</span><span class="s1">&#39;t23&#39;</span><span class="p">],</span> <span class="n">f</span><span class="p">[</span><span class="s1">&#39;delta&#39;</span><span class="p">],</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
-        <span class="c1"># ... should be equal!</span>
-        <span class="n">npt</span><span class="o">.</span><span class="n">assert_array_almost_equal</span><span class="p">(</span><span class="n">K</span><span class="p">,</span> <span class="n">K_std</span><span class="p">,</span> <span class="n">decimal</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="k">class</span> <span class="nc">TestDiag</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">test_svd</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">U</span><span class="p">,</span> <span class="n">S</span><span class="p">,</span> <span class="n">V</span> <span class="o">=</span> <span class="n">msvd</span><span class="p">(</span><span class="n">Mc</span><span class="p">)</span>
+        <span class="n">npt</span><span class="o">.</span><span class="n">assert_array_almost_equal</span><span class="p">(</span><span class="n">U</span> <span class="err">@</span> <span class="n">np</span><span class="o">.</span><span class="n">diag</span><span class="p">(</span><span class="n">S</span><span class="p">)</span> <span class="err">@</span> <span class="n">V</span><span class="o">.</span><span class="n">conj</span><span class="p">()</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">Mc</span><span class="p">,</span> <span class="n">decimal</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+        <span class="n">npt</span><span class="o">.</span><span class="n">assert_array_equal</span><span class="p">(</span><span class="n">S</span><span class="o">.</span><span class="n">imag</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="n">S</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">S</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="n">S</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">S</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
 
-    <span class="k">def</span> <span class="nf">test_rephasing_pmns</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="c1"># a random unitary matrix</span>
-        <span class="n">U</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="o">-</span><span class="mf">0.4825</span><span class="o">-</span><span class="mf">0.5529j</span><span class="p">,</span>  <span class="mf">0.6076</span><span class="o">-</span><span class="mf">0.0129j</span><span class="p">,</span>  <span class="mf">0.1177</span><span class="o">+</span><span class="mf">0.2798j</span><span class="p">],</span>
-                   <span class="p">[</span> <span class="mf">0.1227</span><span class="o">-</span><span class="mf">0.5748j</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.1685</span><span class="o">-</span><span class="mf">0.5786j</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.2349</span><span class="o">-</span><span class="mf">0.486j</span> <span class="p">],</span>
-                   <span class="p">[</span><span class="o">-</span><span class="mf">0.0755</span><span class="o">+</span><span class="mf">0.3322j</span><span class="p">,</span>  <span class="mf">0.5157</span><span class="o">+</span><span class="mf">0.0393j</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.7321</span><span class="o">-</span><span class="mf">0.2837j</span><span class="p">]])</span>
-        <span class="c1"># a random complex matrix</span>
-        <span class="n">Me</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span> <span class="mf">0.6126</span><span class="o">+</span><span class="mf">0.9819j</span><span class="p">,</span>  <span class="mf">0.0165</span><span class="o">+</span><span class="mf">0.3709j</span><span class="p">,</span>  <span class="mf">0.0114</span><span class="o">+</span><span class="mf">0.7819j</span><span class="p">],</span>
-            <span class="p">[</span> <span class="mf">0.6374</span><span class="o">+</span><span class="mf">0.8631j</span><span class="p">,</span>  <span class="mf">0.1249</span><span class="o">+</span><span class="mf">0.8346j</span><span class="p">,</span>  <span class="mf">0.6940</span><span class="o">+</span><span class="mf">0.4495j</span><span class="p">],</span>
-            <span class="p">[</span> <span class="mf">0.1652</span><span class="o">+</span><span class="mf">0.9667j</span><span class="p">,</span>  <span class="mf">0.4952</span><span class="o">+</span><span class="mf">0.1281j</span><span class="p">,</span>  <span class="mf">0.7719</span><span class="o">+</span><span class="mf">0.2325j</span><span class="p">]])</span>
-        <span class="c1"># a random complex symmetric matrix</span>
-        <span class="n">Mnu</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span> <span class="mf">0.60203884</span><span class="o">+</span><span class="mf">0.63349682j</span><span class="p">,</span>  <span class="mf">0.36913812</span><span class="o">+</span><span class="mf">0.35568326j</span><span class="p">,</span>  <span class="mf">0.56965889</span><span class="o">+</span><span class="mf">0.42305627j</span><span class="p">],</span>
-           <span class="p">[</span> <span class="mf">0.36913812</span><span class="o">+</span><span class="mf">0.35568326j</span><span class="p">,</span>  <span class="mf">0.62439443</span><span class="o">+</span><span class="mf">0.34918309j</span><span class="p">,</span>  <span class="mf">0.55097246</span><span class="o">+</span><span class="mf">0.55861965j</span><span class="p">],</span>
-           <span class="p">[</span> <span class="mf">0.56965889</span><span class="o">+</span><span class="mf">0.42305627j</span><span class="p">,</span>  <span class="mf">0.55097246</span><span class="o">+</span><span class="mf">0.55861965j</span><span class="p">,</span> <span class="mf">0.19434061</span><span class="o">+</span><span class="mf">0.57985534j</span><span class="p">]])</span>
-        <span class="n">UeL</span><span class="p">,</span> <span class="n">Se</span><span class="p">,</span> <span class="n">UeR</span> <span class="o">=</span> <span class="n">msvd</span><span class="p">(</span><span class="n">Me</span><span class="p">)</span>
-        <span class="n">Unu</span><span class="p">,</span> <span class="n">Snu</span> <span class="o">=</span> <span class="n">mtakfac</span><span class="p">(</span><span class="n">Mnu</span><span class="p">)</span>
-        <span class="n">f</span> <span class="o">=</span> <span class="n">mixing_phases</span><span class="p">(</span><span class="n">UeL</span><span class="o">.</span><span class="n">conj</span><span class="p">()</span><span class="o">.</span><span class="n">T</span> <span class="err">@</span> <span class="n">Unu</span><span class="p">)</span>
-        <span class="n">Unu_</span><span class="p">,</span> <span class="n">UeL_</span><span class="p">,</span> <span class="n">UeR_</span> <span class="o">=</span> <span class="n">rephase_pmns_standard</span><span class="p">(</span><span class="n">Unu</span><span class="p">,</span> <span class="n">UeL</span><span class="p">,</span> <span class="n">UeR</span><span class="p">)</span>
-        <span class="c1"># rephased PMNS</span>
-        <span class="n">U</span> <span class="o">=</span> <span class="n">UeL_</span><span class="o">.</span><span class="n">conj</span><span class="p">()</span><span class="o">.</span><span class="n">T</span> <span class="err">@</span> <span class="n">Unu_</span>
-        <span class="c1"># PMNS in standard parametrization</span>
-        <span class="n">U_std</span> <span class="o">=</span> <span class="n">unitary_matrix</span><span class="p">(</span><span class="n">f</span><span class="p">[</span><span class="s1">&#39;t12&#39;</span><span class="p">],</span> <span class="n">f</span><span class="p">[</span><span class="s1">&#39;t13&#39;</span><span class="p">],</span> <span class="n">f</span><span class="p">[</span><span class="s1">&#39;t23&#39;</span><span class="p">],</span> <span class="n">f</span><span class="p">[</span><span class="s1">&#39;delta&#39;</span><span class="p">],</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">f</span><span class="p">[</span><span class="s1">&#39;phi1&#39;</span><span class="p">],</span> <span class="n">f</span><span class="p">[</span><span class="s1">&#39;phi2&#39;</span><span class="p">])</span>
-        <span class="c1"># ... should be equal!</span>
-        <span class="n">npt</span><span class="o">.</span><span class="n">assert_array_almost_equal</span><span class="p">(</span><span class="n">U</span><span class="p">,</span> <span class="n">U_std</span><span class="p">,</span> <span class="n">decimal</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">test_takfac</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">npt</span><span class="o">.</span><span class="n">assert_array_equal</span><span class="p">(</span><span class="n">Mcs</span> <span class="o">-</span> <span class="n">Mcs</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">)))</span>
+        <span class="n">U</span><span class="p">,</span> <span class="n">S</span> <span class="o">=</span> <span class="n">mtakfac</span><span class="p">(</span><span class="n">Mcs</span><span class="p">)</span>
+        <span class="n">npt</span><span class="o">.</span><span class="n">assert_array_almost_equal</span><span class="p">(</span><span class="n">U</span><span class="o">.</span><span class="n">conj</span><span class="p">()</span> <span class="err">@</span> <span class="n">np</span><span class="o">.</span><span class="n">diag</span><span class="p">(</span><span class="n">S</span><span class="p">)</span> <span class="err">@</span> <span class="n">U</span><span class="o">.</span><span class="n">conj</span><span class="p">()</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">Mcs</span><span class="p">,</span> <span class="n">decimal</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
 </pre></div>
 
   </div>
@@ -1239,60 +1189,29 @@ table {
   </header>
 
   <section id="section-items">
-
-    <h2 class="section-title" id="header-functions">Functions</h2>
+    <h2 class="section-title" id="header-variables">Module variables</h2>
+      <div class="item">
+      <p id="ckmutil.test_diag.Mc" class="name">var <span class="ident">Mc</span></p>
       
-  <div class="item">
-    <div class="name def" id="ckmutil.test_phases.diagonal_phase_matrix">
-    <p>def <span class="ident">diagonal_phase_matrix</span>(</p><p>a1, a2, a3)</p>
-    </div>
-    
-
-    
-  
-    <div class="desc"><p>A diagonal $3\times 3$ matrix with $jj$-element $e^{i a_j}$</p></div>
-  <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.diagonal_phase_matrix', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.diagonal_phase_matrix" class="source">
-    <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">diagonal_phase_matrix</span><span class="p">(</span><span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="p">,</span> <span class="n">a3</span><span class="p">):</span>
-    <span class="sa">r</span><span class="sd">&quot;&quot;&quot;A diagonal $3\times 3$ matrix with $jj$-element $e^{i a_j}$&quot;&quot;&quot;</span>
-    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">diag</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="mi">1j</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">a1</span><span class="p">,</span> <span class="n">a2</span><span class="p">,</span> <span class="n">a3</span><span class="p">])))</span>
-</pre></div>
-
-  </div>
-</div>
-
-  </div>
-  
-      
-  <div class="item">
-    <div class="name def" id="ckmutil.test_phases.unitary_matrix">
-    <p>def <span class="ident">unitary_matrix</span>(</p><p>t12, t13, t23, delta, delta1, delta2, delta3, phi1, phi2)</p>
-    </div>
-    
-
-    
   
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.unitary_matrix', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.unitary_matrix" class="source">
-    <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">unitary_matrix</span><span class="p">(</span><span class="n">t12</span><span class="p">,</span> <span class="n">t13</span><span class="p">,</span> <span class="n">t23</span><span class="p">,</span> <span class="n">delta</span><span class="p">,</span> <span class="n">delta1</span><span class="p">,</span> <span class="n">delta2</span><span class="p">,</span> <span class="n">delta3</span><span class="p">,</span> <span class="n">phi1</span><span class="p">,</span> <span class="n">phi2</span><span class="p">):</span>
-    <span class="n">ph1</span> <span class="o">=</span> <span class="n">diagonal_phase_matrix</span><span class="p">(</span><span class="n">delta1</span><span class="p">,</span> <span class="n">delta2</span><span class="p">,</span> <span class="n">delta3</span><span class="p">)</span>
-    <span class="n">ph2</span> <span class="o">=</span> <span class="n">diagonal_phase_matrix</span><span class="p">(</span><span class="o">-</span><span class="n">phi1</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="n">phi2</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
-    <span class="n">ckm</span> <span class="o">=</span> <span class="n">ckm_standard</span><span class="p">(</span><span class="n">t12</span><span class="p">,</span> <span class="n">t13</span><span class="p">,</span> <span class="n">t23</span><span class="p">,</span> <span class="n">delta</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">ph1</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">ckm</span><span class="p">,</span> <span class="n">ph2</span><span class="p">))</span>
-</pre></div>
-
-  </div>
 </div>
 
-  </div>
+      </div>
+      <div class="item">
+      <p id="ckmutil.test_diag.Mcs" class="name">var <span class="ident">Mcs</span></p>
+      
   
+  <div class="source_cont">
+</div>
+
+      </div>
+
 
     <h2 class="section-title" id="header-classes">Classes</h2>
       
       <div class="item">
-      <p id="ckmutil.test_phases.TestPhases" class="name">class <span class="ident">TestPhases</span></p>
+      <p id="ckmutil.test_diag.TestDiag" class="name">class <span class="ident">TestDiag</span></p>
       
   
     <div class="desc"><p>A class whose instances are single test cases.</p>
@@ -1321,64 +1240,20 @@ in order to be run.</p>
     by assert methods using difflib. It is looked up as an instance
     attribute so can be configured by individual tests if required.</p></div>
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases" class="source">
-    <div class="codehilite"><pre><span></span><span class="k">class</span> <span class="nc">TestPhases</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
-    <span class="k">def</span> <span class="nf">test_rephasing</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="c1"># a random unitary matrix</span>
-        <span class="n">U</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="o">-</span><span class="mf">0.4825</span><span class="o">-</span><span class="mf">0.5529j</span><span class="p">,</span>  <span class="mf">0.6076</span><span class="o">-</span><span class="mf">0.0129j</span><span class="p">,</span>  <span class="mf">0.1177</span><span class="o">+</span><span class="mf">0.2798j</span><span class="p">],</span>
-                   <span class="p">[</span> <span class="mf">0.1227</span><span class="o">-</span><span class="mf">0.5748j</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.1685</span><span class="o">-</span><span class="mf">0.5786j</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.2349</span><span class="o">-</span><span class="mf">0.486j</span> <span class="p">],</span>
-                   <span class="p">[</span><span class="o">-</span><span class="mf">0.0755</span><span class="o">+</span><span class="mf">0.3322j</span><span class="p">,</span>  <span class="mf">0.5157</span><span class="o">+</span><span class="mf">0.0393j</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.7321</span><span class="o">-</span><span class="mf">0.2837j</span><span class="p">]])</span>
-        <span class="n">f</span> <span class="o">=</span> <span class="n">mixing_phases</span><span class="p">(</span><span class="n">U</span><span class="p">)</span>
-        <span class="c1"># check that matrix reconstructed from extracted angles and phases</span>
-        <span class="c1"># coincides with original matrix</span>
-        <span class="n">npt</span><span class="o">.</span><span class="n">assert_array_almost_equal</span><span class="p">(</span><span class="n">U</span><span class="p">,</span> <span class="n">unitary_matrix</span><span class="p">(</span><span class="o">**</span><span class="n">f</span><span class="p">),</span>
-            <span class="n">decimal</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
-        <span class="c1"># pathological case: unit matrix. Check that everything is zero</span>
-        <span class="n">f</span> <span class="o">=</span> <span class="n">mixing_phases</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">eye</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
-        <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">f</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="s1">&#39;{} is not zero&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">k</span><span class="p">))</span>
-        <span class="c1"># random mass matrices</span>
-        <span class="n">Mu</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span> <span class="mf">0.6126</span><span class="o">+</span><span class="mf">0.9819j</span><span class="p">,</span>  <span class="mf">0.0165</span><span class="o">+</span><span class="mf">0.3709j</span><span class="p">,</span>  <span class="mf">0.0114</span><span class="o">+</span><span class="mf">0.7819j</span><span class="p">],</span>
-            <span class="p">[</span> <span class="mf">0.6374</span><span class="o">+</span><span class="mf">0.8631j</span><span class="p">,</span>  <span class="mf">0.1249</span><span class="o">+</span><span class="mf">0.8346j</span><span class="p">,</span>  <span class="mf">0.6940</span><span class="o">+</span><span class="mf">0.4495j</span><span class="p">],</span>
-            <span class="p">[</span> <span class="mf">0.1652</span><span class="o">+</span><span class="mf">0.9667j</span><span class="p">,</span>  <span class="mf">0.4952</span><span class="o">+</span><span class="mf">0.1281j</span><span class="p">,</span>  <span class="mf">0.7719</span><span class="o">+</span><span class="mf">0.2325j</span><span class="p">]])</span>
-        <span class="n">Md</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span> <span class="mf">0.2874</span><span class="o">+</span><span class="mf">0.2065j</span><span class="p">,</span>  <span class="mf">0.2210</span><span class="o">+</span><span class="mf">0.9077j</span><span class="p">,</span>  <span class="mf">0.4053</span><span class="o">+</span><span class="mf">0.454j</span> <span class="p">],</span>
-            <span class="p">[</span> <span class="mf">0.0339</span><span class="o">+</span><span class="mf">0.8332j</span><span class="p">,</span>  <span class="mf">0.5286</span><span class="o">+</span><span class="mf">0.6339j</span><span class="p">,</span>  <span class="mf">0.3142</span><span class="o">+</span><span class="mf">0.113j</span> <span class="p">],</span>
-            <span class="p">[</span> <span class="mf">0.9379</span><span class="o">+</span><span class="mf">0.2952j</span><span class="p">,</span>  <span class="mf">0.8488</span><span class="o">+</span><span class="mf">0.634j</span> <span class="p">,</span>  <span class="mf">0.1413</span><span class="o">+</span><span class="mf">0.9175j</span><span class="p">]])</span>
-        <span class="n">UuL</span><span class="p">,</span> <span class="n">Su</span><span class="p">,</span> <span class="n">UuR</span> <span class="o">=</span> <span class="n">msvd</span><span class="p">(</span><span class="n">Mu</span><span class="p">)</span>
-        <span class="n">UdL</span><span class="p">,</span> <span class="n">Sd</span><span class="p">,</span> <span class="n">UdR</span> <span class="o">=</span> <span class="n">msvd</span><span class="p">(</span><span class="n">Md</span><span class="p">)</span>
-        <span class="n">f</span> <span class="o">=</span> <span class="n">mixing_phases</span><span class="p">(</span><span class="n">UuL</span><span class="o">.</span><span class="n">conj</span><span class="p">()</span><span class="o">.</span><span class="n">T</span> <span class="err">@</span> <span class="n">UdL</span><span class="p">)</span>
-        <span class="n">UuL_</span><span class="p">,</span> <span class="n">UdL_</span><span class="p">,</span> <span class="n">UuR_</span><span class="p">,</span> <span class="n">UdR_</span> <span class="o">=</span> <span class="n">rephase_standard</span><span class="p">(</span><span class="n">UuL</span><span class="p">,</span> <span class="n">UdL</span><span class="p">,</span> <span class="n">UuR</span><span class="p">,</span> <span class="n">UdR</span><span class="p">)</span>
-        <span class="c1"># rephased CKM</span>
-        <span class="n">K</span> <span class="o">=</span> <span class="n">UuL_</span><span class="o">.</span><span class="n">conj</span><span class="p">()</span><span class="o">.</span><span class="n">T</span> <span class="err">@</span> <span class="n">UdL_</span>
-        <span class="c1"># CKM in standard parametrization</span>
-        <span class="n">K_std</span> <span class="o">=</span> <span class="n">unitary_matrix</span><span class="p">(</span><span class="n">f</span><span class="p">[</span><span class="s1">&#39;t12&#39;</span><span class="p">],</span> <span class="n">f</span><span class="p">[</span><span class="s1">&#39;t13&#39;</span><span class="p">],</span> <span class="n">f</span><span class="p">[</span><span class="s1">&#39;t23&#39;</span><span class="p">],</span> <span class="n">f</span><span class="p">[</span><span class="s1">&#39;delta&#39;</span><span class="p">],</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
-        <span class="c1"># ... should be equal!</span>
-        <span class="n">npt</span><span class="o">.</span><span class="n">assert_array_almost_equal</span><span class="p">(</span><span class="n">K</span><span class="p">,</span> <span class="n">K_std</span><span class="p">,</span> <span class="n">decimal</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag" class="source">
+    <div class="codehilite"><pre><span></span><span class="k">class</span> <span class="nc">TestDiag</span><span class="p">(</span><span class="n">unittest</span><span class="o">.</span><span class="n">TestCase</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">test_svd</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">U</span><span class="p">,</span> <span class="n">S</span><span class="p">,</span> <span class="n">V</span> <span class="o">=</span> <span class="n">msvd</span><span class="p">(</span><span class="n">Mc</span><span class="p">)</span>
+        <span class="n">npt</span><span class="o">.</span><span class="n">assert_array_almost_equal</span><span class="p">(</span><span class="n">U</span> <span class="err">@</span> <span class="n">np</span><span class="o">.</span><span class="n">diag</span><span class="p">(</span><span class="n">S</span><span class="p">)</span> <span class="err">@</span> <span class="n">V</span><span class="o">.</span><span class="n">conj</span><span class="p">()</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">Mc</span><span class="p">,</span> <span class="n">decimal</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+        <span class="n">npt</span><span class="o">.</span><span class="n">assert_array_equal</span><span class="p">(</span><span class="n">S</span><span class="o">.</span><span class="n">imag</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]))</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="n">S</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">S</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="n">S</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">S</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
 
-    <span class="k">def</span> <span class="nf">test_rephasing_pmns</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="c1"># a random unitary matrix</span>
-        <span class="n">U</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="o">-</span><span class="mf">0.4825</span><span class="o">-</span><span class="mf">0.5529j</span><span class="p">,</span>  <span class="mf">0.6076</span><span class="o">-</span><span class="mf">0.0129j</span><span class="p">,</span>  <span class="mf">0.1177</span><span class="o">+</span><span class="mf">0.2798j</span><span class="p">],</span>
-                   <span class="p">[</span> <span class="mf">0.1227</span><span class="o">-</span><span class="mf">0.5748j</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.1685</span><span class="o">-</span><span class="mf">0.5786j</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.2349</span><span class="o">-</span><span class="mf">0.486j</span> <span class="p">],</span>
-                   <span class="p">[</span><span class="o">-</span><span class="mf">0.0755</span><span class="o">+</span><span class="mf">0.3322j</span><span class="p">,</span>  <span class="mf">0.5157</span><span class="o">+</span><span class="mf">0.0393j</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.7321</span><span class="o">-</span><span class="mf">0.2837j</span><span class="p">]])</span>
-        <span class="c1"># a random complex matrix</span>
-        <span class="n">Me</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span> <span class="mf">0.6126</span><span class="o">+</span><span class="mf">0.9819j</span><span class="p">,</span>  <span class="mf">0.0165</span><span class="o">+</span><span class="mf">0.3709j</span><span class="p">,</span>  <span class="mf">0.0114</span><span class="o">+</span><span class="mf">0.7819j</span><span class="p">],</span>
-            <span class="p">[</span> <span class="mf">0.6374</span><span class="o">+</span><span class="mf">0.8631j</span><span class="p">,</span>  <span class="mf">0.1249</span><span class="o">+</span><span class="mf">0.8346j</span><span class="p">,</span>  <span class="mf">0.6940</span><span class="o">+</span><span class="mf">0.4495j</span><span class="p">],</span>
-            <span class="p">[</span> <span class="mf">0.1652</span><span class="o">+</span><span class="mf">0.9667j</span><span class="p">,</span>  <span class="mf">0.4952</span><span class="o">+</span><span class="mf">0.1281j</span><span class="p">,</span>  <span class="mf">0.7719</span><span class="o">+</span><span class="mf">0.2325j</span><span class="p">]])</span>
-        <span class="c1"># a random complex symmetric matrix</span>
-        <span class="n">Mnu</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span> <span class="mf">0.60203884</span><span class="o">+</span><span class="mf">0.63349682j</span><span class="p">,</span>  <span class="mf">0.36913812</span><span class="o">+</span><span class="mf">0.35568326j</span><span class="p">,</span>  <span class="mf">0.56965889</span><span class="o">+</span><span class="mf">0.42305627j</span><span class="p">],</span>
-           <span class="p">[</span> <span class="mf">0.36913812</span><span class="o">+</span><span class="mf">0.35568326j</span><span class="p">,</span>  <span class="mf">0.62439443</span><span class="o">+</span><span class="mf">0.34918309j</span><span class="p">,</span>  <span class="mf">0.55097246</span><span class="o">+</span><span class="mf">0.55861965j</span><span class="p">],</span>
-           <span class="p">[</span> <span class="mf">0.56965889</span><span class="o">+</span><span class="mf">0.42305627j</span><span class="p">,</span>  <span class="mf">0.55097246</span><span class="o">+</span><span class="mf">0.55861965j</span><span class="p">,</span> <span class="mf">0.19434061</span><span class="o">+</span><span class="mf">0.57985534j</span><span class="p">]])</span>
-        <span class="n">UeL</span><span class="p">,</span> <span class="n">Se</span><span class="p">,</span> <span class="n">UeR</span> <span class="o">=</span> <span class="n">msvd</span><span class="p">(</span><span class="n">Me</span><span class="p">)</span>
-        <span class="n">Unu</span><span class="p">,</span> <span class="n">Snu</span> <span class="o">=</span> <span class="n">mtakfac</span><span class="p">(</span><span class="n">Mnu</span><span class="p">)</span>
-        <span class="n">f</span> <span class="o">=</span> <span class="n">mixing_phases</span><span class="p">(</span><span class="n">UeL</span><span class="o">.</span><span class="n">conj</span><span class="p">()</span><span class="o">.</span><span class="n">T</span> <span class="err">@</span> <span class="n">Unu</span><span class="p">)</span>
-        <span class="n">Unu_</span><span class="p">,</span> <span class="n">UeL_</span><span class="p">,</span> <span class="n">UeR_</span> <span class="o">=</span> <span class="n">rephase_pmns_standard</span><span class="p">(</span><span class="n">Unu</span><span class="p">,</span> <span class="n">UeL</span><span class="p">,</span> <span class="n">UeR</span><span class="p">)</span>
-        <span class="c1"># rephased PMNS</span>
-        <span class="n">U</span> <span class="o">=</span> <span class="n">UeL_</span><span class="o">.</span><span class="n">conj</span><span class="p">()</span><span class="o">.</span><span class="n">T</span> <span class="err">@</span> <span class="n">Unu_</span>
-        <span class="c1"># PMNS in standard parametrization</span>
-        <span class="n">U_std</span> <span class="o">=</span> <span class="n">unitary_matrix</span><span class="p">(</span><span class="n">f</span><span class="p">[</span><span class="s1">&#39;t12&#39;</span><span class="p">],</span> <span class="n">f</span><span class="p">[</span><span class="s1">&#39;t13&#39;</span><span class="p">],</span> <span class="n">f</span><span class="p">[</span><span class="s1">&#39;t23&#39;</span><span class="p">],</span> <span class="n">f</span><span class="p">[</span><span class="s1">&#39;delta&#39;</span><span class="p">],</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">f</span><span class="p">[</span><span class="s1">&#39;phi1&#39;</span><span class="p">],</span> <span class="n">f</span><span class="p">[</span><span class="s1">&#39;phi2&#39;</span><span class="p">])</span>
-        <span class="c1"># ... should be equal!</span>
-        <span class="n">npt</span><span class="o">.</span><span class="n">assert_array_almost_equal</span><span class="p">(</span><span class="n">U</span><span class="p">,</span> <span class="n">U_std</span><span class="p">,</span> <span class="n">decimal</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+    <span class="k">def</span> <span class="nf">test_takfac</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">npt</span><span class="o">.</span><span class="n">assert_array_equal</span><span class="p">(</span><span class="n">Mcs</span> <span class="o">-</span> <span class="n">Mcs</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">)))</span>
+        <span class="n">U</span><span class="p">,</span> <span class="n">S</span> <span class="o">=</span> <span class="n">mtakfac</span><span class="p">(</span><span class="n">Mcs</span><span class="p">)</span>
+        <span class="n">npt</span><span class="o">.</span><span class="n">assert_array_almost_equal</span><span class="p">(</span><span class="n">U</span><span class="o">.</span><span class="n">conj</span><span class="p">()</span> <span class="err">@</span> <span class="n">np</span><span class="o">.</span><span class="n">diag</span><span class="p">(</span><span class="n">S</span><span class="p">)</span> <span class="err">@</span> <span class="n">U</span><span class="o">.</span><span class="n">conj</span><span class="p">()</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">Mcs</span><span class="p">,</span> <span class="n">decimal</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
 </pre></div>
 
   </div>
@@ -1388,13 +1263,13 @@ in order to be run.</p>
       <div class="class">
           <h3>Ancestors (in MRO)</h3>
           <ul class="class_list">
-          <li><a href="#ckmutil.test_phases.TestPhases">TestPhases</a></li>
+          <li><a href="#ckmutil.test_diag.TestDiag">TestDiag</a></li>
           <li>unittest.case.TestCase</li>
           <li>builtins.object</li>
           </ul>
           <h3>Class variables</h3>
             <div class="item">
-            <p id="ckmutil.test_phases.TestPhases.failureException" class="name">var <span class="ident">failureException</span></p>
+            <p id="ckmutil.test_diag.TestDiag.failureException" class="name">var <span class="ident">failureException</span></p>
             
 
             
@@ -1404,7 +1279,7 @@ in order to be run.</p>
 
             </div>
             <div class="item">
-            <p id="ckmutil.test_phases.TestPhases.longMessage" class="name">var <span class="ident">longMessage</span></p>
+            <p id="ckmutil.test_diag.TestDiag.longMessage" class="name">var <span class="ident">longMessage</span></p>
             
 
             
@@ -1414,7 +1289,7 @@ in order to be run.</p>
 
             </div>
             <div class="item">
-            <p id="ckmutil.test_phases.TestPhases.maxDiff" class="name">var <span class="ident">maxDiff</span></p>
+            <p id="ckmutil.test_diag.TestDiag.maxDiff" class="name">var <span class="ident">maxDiff</span></p>
             
 
             
@@ -1426,7 +1301,7 @@ in order to be run.</p>
           <h3>Static methods</h3>
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.__init__">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.__init__">
     <p>def <span class="ident">__init__</span>(</p><p>self, methodName=&#39;runTest&#39;)</p>
     </div>
     
@@ -1437,8 +1312,8 @@ in order to be run.</p>
 method when executed. Raises a ValueError if the instance does
 not have a method with the specified name.</p></div>
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.__init__', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.__init__" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.__init__', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.__init__" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">methodName</span><span class="o">=</span><span class="s1">&#39;runTest&#39;</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Create an instance of the class that will use the named test</span>
 <span class="sd">       method when executed. Raises a ValueError if the instance does</span>
@@ -1478,7 +1353,7 @@ not have a method with the specified name.</p></div>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.addCleanup">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.addCleanup">
     <p>def <span class="ident">addCleanup</span>(</p><p>self, function, *args, **kwargs)</p>
     </div>
     
@@ -1490,8 +1365,8 @@ completed. Functions added are called on a LIFO basis and are
 called after tearDown on test failure or success.</p>
 <p>Cleanup items are called even if setUp fails (unlike tearDown).</p></div>
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.addCleanup', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.addCleanup" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.addCleanup', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.addCleanup" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">addCleanup</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">function</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Add a function, with arguments, to be called when the test is</span>
 <span class="sd">    completed. Functions added are called on a LIFO basis and are</span>
@@ -1507,7 +1382,7 @@ called after tearDown on test failure or success.</p>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.addTypeEqualityFunc">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.addTypeEqualityFunc">
     <p>def <span class="ident">addTypeEqualityFunc</span>(</p><p>self, typeobj, function)</p>
     </div>
     
@@ -1524,8 +1399,8 @@ their own type equality functions to provide nicer error messages.</p>
             msg= argument that raises self.failureException with a
             useful error message when the two arguments are not equal.</p></div>
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.addTypeEqualityFunc', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.addTypeEqualityFunc" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.addTypeEqualityFunc', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.addTypeEqualityFunc" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">addTypeEqualityFunc</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">typeobj</span><span class="p">,</span> <span class="n">function</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Add a type specific assertEqual style function to compare a type.</span>
 <span class="sd">    This method is for use by TestCase subclasses that need to register</span>
@@ -1547,7 +1422,7 @@ their own type equality functions to provide nicer error messages.</p>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.assertAlmostEqual">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.assertAlmostEqual">
     <p>def <span class="ident">assertAlmostEqual</span>(</p><p>self, first, second, places=None, msg=None, delta=None)</p>
     </div>
     
@@ -1563,8 +1438,8 @@ as significant digits (measured from the most significant digit).</p>
 <p>If the two objects compare equal then they will automatically
 compare almost equal.</p></div>
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.assertAlmostEqual', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.assertAlmostEqual" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.assertAlmostEqual', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.assertAlmostEqual" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">assertAlmostEqual</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">first</span><span class="p">,</span> <span class="n">second</span><span class="p">,</span> <span class="n">places</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span>
                       <span class="n">delta</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Fail if the two objects are unequal as determined by their</span>
@@ -1606,7 +1481,7 @@ compare almost equal.</p></div>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.assertAlmostEquals">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.assertAlmostEquals">
     <p>def <span class="ident">assertAlmostEquals</span>(</p><p>*args, **kwargs)</p>
     </div>
     
@@ -1614,8 +1489,8 @@ compare almost equal.</p></div>
     
   
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.assertAlmostEquals', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.assertAlmostEquals" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.assertAlmostEquals', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.assertAlmostEquals" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">deprecated_func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
     <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span>
         <span class="s1">&#39;Please use {0} instead.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">original_func</span><span class="o">.</span><span class="vm">__name__</span><span class="p">),</span>
@@ -1630,7 +1505,7 @@ compare almost equal.</p></div>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.assertCountEqual">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.assertCountEqual">
     <p>def <span class="ident">assertCountEqual</span>(</p><p>self, first, second, msg=None)</p>
     </div>
     
@@ -1649,8 +1524,8 @@ it verifies that the elements occur the same number of times.</p>
     - [0, 1, 1] and [1, 0, 1] compare equal.
     - [0, 0, 1] and [0, 1] compare unequal.</p></div>
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.assertCountEqual', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.assertCountEqual" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.assertCountEqual', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.assertCountEqual" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">assertCountEqual</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">first</span><span class="p">,</span> <span class="n">second</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;An unordered sequence comparison asserting that the same elements,</span>
 <span class="sd">    regardless of order.  If the same element occurs more than once,</span>
@@ -1688,7 +1563,7 @@ it verifies that the elements occur the same number of times.</p>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.assertDictContainsSubset">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.assertDictContainsSubset">
     <p>def <span class="ident">assertDictContainsSubset</span>(</p><p>self, subset, dictionary, msg=None)</p>
     </div>
     
@@ -1697,8 +1572,8 @@ it verifies that the elements occur the same number of times.</p>
   
     <div class="desc"><p>Checks whether dictionary is a superset of subset.</p></div>
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.assertDictContainsSubset', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.assertDictContainsSubset" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.assertDictContainsSubset', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.assertDictContainsSubset" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">assertDictContainsSubset</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">subset</span><span class="p">,</span> <span class="n">dictionary</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Checks whether dictionary is a superset of subset.&quot;&quot;&quot;</span>
     <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span><span class="s1">&#39;assertDictContainsSubset is deprecated&#39;</span><span class="p">,</span>
@@ -1732,7 +1607,7 @@ it verifies that the elements occur the same number of times.</p>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.assertDictEqual">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.assertDictEqual">
     <p>def <span class="ident">assertDictEqual</span>(</p><p>self, d1, d2, msg=None)</p>
     </div>
     
@@ -1740,8 +1615,8 @@ it verifies that the elements occur the same number of times.</p>
     
   
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.assertDictEqual', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.assertDictEqual" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.assertDictEqual', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.assertDictEqual" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">assertDictEqual</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">d1</span><span class="p">,</span> <span class="n">d2</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">assertIsInstance</span><span class="p">(</span><span class="n">d1</span><span class="p">,</span> <span class="nb">dict</span><span class="p">,</span> <span class="s1">&#39;First argument is not a dictionary&#39;</span><span class="p">)</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">assertIsInstance</span><span class="p">(</span><span class="n">d2</span><span class="p">,</span> <span class="nb">dict</span><span class="p">,</span> <span class="s1">&#39;Second argument is not a dictionary&#39;</span><span class="p">)</span>
@@ -1761,7 +1636,7 @@ it verifies that the elements occur the same number of times.</p>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.assertEqual">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.assertEqual">
     <p>def <span class="ident">assertEqual</span>(</p><p>self, first, second, msg=None)</p>
     </div>
     
@@ -1771,8 +1646,8 @@ it verifies that the elements occur the same number of times.</p>
     <div class="desc"><p>Fail if the two objects are unequal as determined by the '=='
 operator.</p></div>
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.assertEqual', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.assertEqual" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.assertEqual', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.assertEqual" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">assertEqual</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">first</span><span class="p">,</span> <span class="n">second</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Fail if the two objects are unequal as determined by the &#39;==&#39;</span>
 <span class="sd">       operator.</span>
@@ -1788,7 +1663,7 @@ operator.</p></div>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.assertEquals">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.assertEquals">
     <p>def <span class="ident">assertEquals</span>(</p><p>*args, **kwargs)</p>
     </div>
     
@@ -1796,8 +1671,8 @@ operator.</p></div>
     
   
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.assertEquals', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.assertEquals" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.assertEquals', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.assertEquals" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">deprecated_func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
     <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span>
         <span class="s1">&#39;Please use {0} instead.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">original_func</span><span class="o">.</span><span class="vm">__name__</span><span class="p">),</span>
@@ -1812,7 +1687,7 @@ operator.</p></div>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.assertFalse">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.assertFalse">
     <p>def <span class="ident">assertFalse</span>(</p><p>self, expr, msg=None)</p>
     </div>
     
@@ -1821,8 +1696,8 @@ operator.</p></div>
   
     <div class="desc"><p>Check that the expression is false.</p></div>
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.assertFalse', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.assertFalse" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.assertFalse', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.assertFalse" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">assertFalse</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">expr</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Check that the expression is false.&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">expr</span><span class="p">:</span>
@@ -1837,7 +1712,7 @@ operator.</p></div>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.assertGreater">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.assertGreater">
     <p>def <span class="ident">assertGreater</span>(</p><p>self, a, b, msg=None)</p>
     </div>
     
@@ -1846,8 +1721,8 @@ operator.</p></div>
   
     <div class="desc"><p>Just like self.assertTrue(a &gt; b), but with a nicer default message.</p></div>
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.assertGreater', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.assertGreater" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.assertGreater', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.assertGreater" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">assertGreater</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Just like self.assertTrue(a &gt; b), but with a nicer default message.&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">:</span>
@@ -1862,7 +1737,7 @@ operator.</p></div>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.assertGreaterEqual">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.assertGreaterEqual">
     <p>def <span class="ident">assertGreaterEqual</span>(</p><p>self, a, b, msg=None)</p>
     </div>
     
@@ -1871,8 +1746,8 @@ operator.</p></div>
   
     <div class="desc"><p>Just like self.assertTrue(a &gt;= b), but with a nicer default message.</p></div>
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.assertGreaterEqual', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.assertGreaterEqual" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.assertGreaterEqual', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.assertGreaterEqual" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">assertGreaterEqual</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Just like self.assertTrue(a &gt;= b), but with a nicer default message.&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">a</span> <span class="o">&gt;=</span> <span class="n">b</span><span class="p">:</span>
@@ -1887,7 +1762,7 @@ operator.</p></div>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.assertIn">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.assertIn">
     <p>def <span class="ident">assertIn</span>(</p><p>self, member, container, msg=None)</p>
     </div>
     
@@ -1896,8 +1771,8 @@ operator.</p></div>
   
     <div class="desc"><p>Just like self.assertTrue(a in b), but with a nicer default message.</p></div>
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.assertIn', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.assertIn" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.assertIn', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.assertIn" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">assertIn</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">member</span><span class="p">,</span> <span class="n">container</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Just like self.assertTrue(a in b), but with a nicer default message.&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">member</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">container</span><span class="p">:</span>
@@ -1913,7 +1788,7 @@ operator.</p></div>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.assertIs">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.assertIs">
     <p>def <span class="ident">assertIs</span>(</p><p>self, expr1, expr2, msg=None)</p>
     </div>
     
@@ -1922,8 +1797,8 @@ operator.</p></div>
   
     <div class="desc"><p>Just like self.assertTrue(a is b), but with a nicer default message.</p></div>
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.assertIs', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.assertIs" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.assertIs', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.assertIs" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">assertIs</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">expr1</span><span class="p">,</span> <span class="n">expr2</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Just like self.assertTrue(a is b), but with a nicer default message.&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">expr1</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">expr2</span><span class="p">:</span>
@@ -1939,7 +1814,7 @@ operator.</p></div>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.assertIsInstance">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.assertIsInstance">
     <p>def <span class="ident">assertIsInstance</span>(</p><p>self, obj, cls, msg=None)</p>
     </div>
     
@@ -1949,8 +1824,8 @@ operator.</p></div>
     <div class="desc"><p>Same as self.assertTrue(isinstance(obj, cls)), with a nicer
 default message.</p></div>
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.assertIsInstance', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.assertIsInstance" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.assertIsInstance', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.assertIsInstance" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">assertIsInstance</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">obj</span><span class="p">,</span> <span class="bp">cls</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Same as self.assertTrue(isinstance(obj, cls)), with a nicer</span>
 <span class="sd">    default message.&quot;&quot;&quot;</span>
@@ -1966,7 +1841,7 @@ default message.</p></div>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.assertIsNone">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.assertIsNone">
     <p>def <span class="ident">assertIsNone</span>(</p><p>self, obj, msg=None)</p>
     </div>
     
@@ -1975,8 +1850,8 @@ default message.</p></div>
   
     <div class="desc"><p>Same as self.assertTrue(obj is None), with a nicer default message.</p></div>
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.assertIsNone', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.assertIsNone" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.assertIsNone', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.assertIsNone" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">assertIsNone</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">obj</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Same as self.assertTrue(obj is None), with a nicer default message.&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">obj</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span><span class="p">:</span>
@@ -1991,7 +1866,7 @@ default message.</p></div>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.assertIsNot">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.assertIsNot">
     <p>def <span class="ident">assertIsNot</span>(</p><p>self, expr1, expr2, msg=None)</p>
     </div>
     
@@ -2000,8 +1875,8 @@ default message.</p></div>
   
     <div class="desc"><p>Just like self.assertTrue(a is not b), but with a nicer default message.</p></div>
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.assertIsNot', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.assertIsNot" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.assertIsNot', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.assertIsNot" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">assertIsNot</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">expr1</span><span class="p">,</span> <span class="n">expr2</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Just like self.assertTrue(a is not b), but with a nicer default message.&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">expr1</span> <span class="ow">is</span> <span class="n">expr2</span><span class="p">:</span>
@@ -2016,7 +1891,7 @@ default message.</p></div>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.assertIsNotNone">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.assertIsNotNone">
     <p>def <span class="ident">assertIsNotNone</span>(</p><p>self, obj, msg=None)</p>
     </div>
     
@@ -2025,8 +1900,8 @@ default message.</p></div>
   
     <div class="desc"><p>Included for symmetry with assertIsNone.</p></div>
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.assertIsNotNone', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.assertIsNotNone" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.assertIsNotNone', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.assertIsNotNone" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">assertIsNotNone</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">obj</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Included for symmetry with assertIsNone.&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">obj</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
@@ -2041,7 +1916,7 @@ default message.</p></div>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.assertLess">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.assertLess">
     <p>def <span class="ident">assertLess</span>(</p><p>self, a, b, msg=None)</p>
     </div>
     
@@ -2050,8 +1925,8 @@ default message.</p></div>
   
     <div class="desc"><p>Just like self.assertTrue(a &lt; b), but with a nicer default message.</p></div>
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.assertLess', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.assertLess" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.assertLess', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.assertLess" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">assertLess</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Just like self.assertTrue(a &lt; b), but with a nicer default message.&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="n">b</span><span class="p">:</span>
@@ -2066,7 +1941,7 @@ default message.</p></div>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.assertLessEqual">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.assertLessEqual">
     <p>def <span class="ident">assertLessEqual</span>(</p><p>self, a, b, msg=None)</p>
     </div>
     
@@ -2075,8 +1950,8 @@ default message.</p></div>
   
     <div class="desc"><p>Just like self.assertTrue(a &lt;= b), but with a nicer default message.</p></div>
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.assertLessEqual', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.assertLessEqual" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.assertLessEqual', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.assertLessEqual" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">assertLessEqual</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Just like self.assertTrue(a &lt;= b), but with a nicer default message.&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">a</span> <span class="o">&lt;=</span> <span class="n">b</span><span class="p">:</span>
@@ -2091,7 +1966,7 @@ default message.</p></div>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.assertListEqual">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.assertListEqual">
     <p>def <span class="ident">assertListEqual</span>(</p><p>self, list1, list2, msg=None)</p>
     </div>
     
@@ -2105,8 +1980,8 @@ default message.</p></div>
     msg: Optional message to use on failure instead of a list of
             differences.</p></div>
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.assertListEqual', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.assertListEqual" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.assertListEqual', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.assertListEqual" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">assertListEqual</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">list1</span><span class="p">,</span> <span class="n">list2</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;A list-specific equality assertion.</span>
 <span class="sd">    Args:</span>
@@ -2125,7 +2000,7 @@ default message.</p></div>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.assertLogs">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.assertLogs">
     <p>def <span class="ident">assertLogs</span>(</p><p>self, logger=None, level=None)</p>
     </div>
     
@@ -2149,8 +2024,8 @@ self.assertEqual(cm.output, [&#39;INFO:foo:first message&#39;,
                              &#39;ERROR:foo.bar:second message&#39;])
 </pre></div></div>
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.assertLogs', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.assertLogs" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.assertLogs', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.assertLogs" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">assertLogs</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">logger</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">level</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Fail unless a log message of level *level* or higher is emitted</span>
 <span class="sd">    on *logger_name* or its children.  If omitted, *level* defaults to</span>
@@ -2178,7 +2053,7 @@ self.assertEqual(cm.output, [&#39;INFO:foo:first message&#39;,
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.assertMultiLineEqual">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.assertMultiLineEqual">
     <p>def <span class="ident">assertMultiLineEqual</span>(</p><p>self, first, second, msg=None)</p>
     </div>
     
@@ -2187,8 +2062,8 @@ self.assertEqual(cm.output, [&#39;INFO:foo:first message&#39;,
   
     <div class="desc"><p>Assert that two multi-line strings are equal.</p></div>
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.assertMultiLineEqual', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.assertMultiLineEqual" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.assertMultiLineEqual', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.assertMultiLineEqual" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">assertMultiLineEqual</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">first</span><span class="p">,</span> <span class="n">second</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Assert that two multi-line strings are equal.&quot;&quot;&quot;</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">assertIsInstance</span><span class="p">(</span><span class="n">first</span><span class="p">,</span> <span class="nb">str</span><span class="p">,</span> <span class="s1">&#39;First argument is not a string&#39;</span><span class="p">)</span>
@@ -2216,7 +2091,7 @@ self.assertEqual(cm.output, [&#39;INFO:foo:first message&#39;,
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.assertNotAlmostEqual">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.assertNotAlmostEqual">
     <p>def <span class="ident">assertNotAlmostEqual</span>(</p><p>self, first, second, places=None, msg=None, delta=None)</p>
     </div>
     
@@ -2231,8 +2106,8 @@ between the two objects is less than the given delta.</p>
 as significant digits (measured from the most significant digit).</p>
 <p>Objects that are equal automatically fail.</p></div>
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.assertNotAlmostEqual', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.assertNotAlmostEqual" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.assertNotAlmostEqual', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.assertNotAlmostEqual" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">assertNotAlmostEqual</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">first</span><span class="p">,</span> <span class="n">second</span><span class="p">,</span> <span class="n">places</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span>
                          <span class="n">delta</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Fail if the two objects are equal as determined by their</span>
@@ -2270,7 +2145,7 @@ as significant digits (measured from the most significant digit).</p>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.assertNotAlmostEquals">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.assertNotAlmostEquals">
     <p>def <span class="ident">assertNotAlmostEquals</span>(</p><p>*args, **kwargs)</p>
     </div>
     
@@ -2278,8 +2153,8 @@ as significant digits (measured from the most significant digit).</p>
     
   
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.assertNotAlmostEquals', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.assertNotAlmostEquals" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.assertNotAlmostEquals', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.assertNotAlmostEquals" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">deprecated_func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
     <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span>
         <span class="s1">&#39;Please use {0} instead.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">original_func</span><span class="o">.</span><span class="vm">__name__</span><span class="p">),</span>
@@ -2294,7 +2169,7 @@ as significant digits (measured from the most significant digit).</p>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.assertNotEqual">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.assertNotEqual">
     <p>def <span class="ident">assertNotEqual</span>(</p><p>self, first, second, msg=None)</p>
     </div>
     
@@ -2304,8 +2179,8 @@ as significant digits (measured from the most significant digit).</p>
     <div class="desc"><p>Fail if the two objects are equal as determined by the '!='
 operator.</p></div>
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.assertNotEqual', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.assertNotEqual" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.assertNotEqual', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.assertNotEqual" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">assertNotEqual</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">first</span><span class="p">,</span> <span class="n">second</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Fail if the two objects are equal as determined by the &#39;!=&#39;</span>
 <span class="sd">       operator.</span>
@@ -2323,7 +2198,7 @@ operator.</p></div>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.assertNotEquals">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.assertNotEquals">
     <p>def <span class="ident">assertNotEquals</span>(</p><p>*args, **kwargs)</p>
     </div>
     
@@ -2331,8 +2206,8 @@ operator.</p></div>
     
   
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.assertNotEquals', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.assertNotEquals" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.assertNotEquals', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.assertNotEquals" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">deprecated_func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
     <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span>
         <span class="s1">&#39;Please use {0} instead.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">original_func</span><span class="o">.</span><span class="vm">__name__</span><span class="p">),</span>
@@ -2347,7 +2222,7 @@ operator.</p></div>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.assertNotIn">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.assertNotIn">
     <p>def <span class="ident">assertNotIn</span>(</p><p>self, member, container, msg=None)</p>
     </div>
     
@@ -2356,8 +2231,8 @@ operator.</p></div>
   
     <div class="desc"><p>Just like self.assertTrue(a not in b), but with a nicer default message.</p></div>
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.assertNotIn', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.assertNotIn" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.assertNotIn', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.assertNotIn" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">assertNotIn</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">member</span><span class="p">,</span> <span class="n">container</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Just like self.assertTrue(a not in b), but with a nicer default message.&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="n">member</span> <span class="ow">in</span> <span class="n">container</span><span class="p">:</span>
@@ -2373,7 +2248,7 @@ operator.</p></div>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.assertNotIsInstance">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.assertNotIsInstance">
     <p>def <span class="ident">assertNotIsInstance</span>(</p><p>self, obj, cls, msg=None)</p>
     </div>
     
@@ -2382,8 +2257,8 @@ operator.</p></div>
   
     <div class="desc"><p>Included for symmetry with assertIsInstance.</p></div>
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.assertNotIsInstance', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.assertNotIsInstance" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.assertNotIsInstance', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.assertNotIsInstance" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">assertNotIsInstance</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">obj</span><span class="p">,</span> <span class="bp">cls</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Included for symmetry with assertIsInstance.&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="bp">cls</span><span class="p">):</span>
@@ -2398,7 +2273,7 @@ operator.</p></div>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.assertNotRegex">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.assertNotRegex">
     <p>def <span class="ident">assertNotRegex</span>(</p><p>self, text, unexpected_regex, msg=None)</p>
     </div>
     
@@ -2407,8 +2282,8 @@ operator.</p></div>
   
     <div class="desc"><p>Fail the test if the text matches the regular expression.</p></div>
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.assertNotRegex', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.assertNotRegex" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.assertNotRegex', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.assertNotRegex" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">assertNotRegex</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">text</span><span class="p">,</span> <span class="n">unexpected_regex</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Fail the test if the text matches the regular expression.&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">unexpected_regex</span><span class="p">,</span> <span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">)):</span>
@@ -2431,7 +2306,7 @@ operator.</p></div>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.assertNotRegexpMatches">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.assertNotRegexpMatches">
     <p>def <span class="ident">assertNotRegexpMatches</span>(</p><p>*args, **kwargs)</p>
     </div>
     
@@ -2439,8 +2314,8 @@ operator.</p></div>
     
   
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.assertNotRegexpMatches', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.assertNotRegexpMatches" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.assertNotRegexpMatches', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.assertNotRegexpMatches" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">deprecated_func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
     <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span>
         <span class="s1">&#39;Please use {0} instead.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">original_func</span><span class="o">.</span><span class="vm">__name__</span><span class="p">),</span>
@@ -2455,7 +2330,7 @@ operator.</p></div>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.assertRaises">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.assertRaises">
     <p>def <span class="ident">assertRaises</span>(</p><p>self, expected_exception, *args, **kwargs)</p>
     </div>
     
@@ -2486,8 +2361,8 @@ the_exception = cm.exception
 self.assertEqual(the_exception.error_code, 3)
 </pre></div></div>
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.assertRaises', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.assertRaises" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.assertRaises', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.assertRaises" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">assertRaises</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">expected_exception</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Fail unless an exception of class expected_exception is raised</span>
 <span class="sd">       by the callable when invoked with specified positional and</span>
@@ -2524,7 +2399,7 @@ self.assertEqual(the_exception.error_code, 3)
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.assertRaisesRegex">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.assertRaisesRegex">
     <p>def <span class="ident">assertRaisesRegex</span>(</p><p>self, expected_exception, expected_regex, *args, **kwargs)</p>
     </div>
     
@@ -2541,8 +2416,8 @@ self.assertEqual(the_exception.error_code, 3)
     msg: Optional message used in case of failure. Can only be used
             when assertRaisesRegex is used as a context manager.</p></div>
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.assertRaisesRegex', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.assertRaisesRegex" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.assertRaisesRegex', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.assertRaisesRegex" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">assertRaisesRegex</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">expected_exception</span><span class="p">,</span> <span class="n">expected_regex</span><span class="p">,</span>
                       <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Asserts that the message in a raised exception matches a regex.</span>
@@ -2566,7 +2441,7 @@ self.assertEqual(the_exception.error_code, 3)
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.assertRaisesRegexp">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.assertRaisesRegexp">
     <p>def <span class="ident">assertRaisesRegexp</span>(</p><p>*args, **kwargs)</p>
     </div>
     
@@ -2574,8 +2449,8 @@ self.assertEqual(the_exception.error_code, 3)
     
   
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.assertRaisesRegexp', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.assertRaisesRegexp" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.assertRaisesRegexp', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.assertRaisesRegexp" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">deprecated_func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
     <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span>
         <span class="s1">&#39;Please use {0} instead.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">original_func</span><span class="o">.</span><span class="vm">__name__</span><span class="p">),</span>
@@ -2590,7 +2465,7 @@ self.assertEqual(the_exception.error_code, 3)
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.assertRegex">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.assertRegex">
     <p>def <span class="ident">assertRegex</span>(</p><p>self, text, expected_regex, msg=None)</p>
     </div>
     
@@ -2599,8 +2474,8 @@ self.assertEqual(the_exception.error_code, 3)
   
     <div class="desc"><p>Fail the test unless the text matches the regular expression.</p></div>
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.assertRegex', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.assertRegex" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.assertRegex', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.assertRegex" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">assertRegex</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">text</span><span class="p">,</span> <span class="n">expected_regex</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Fail the test unless the text matches the regular expression.&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">expected_regex</span><span class="p">,</span> <span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="nb">bytes</span><span class="p">)):</span>
@@ -2621,7 +2496,7 @@ self.assertEqual(the_exception.error_code, 3)
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.assertRegexpMatches">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.assertRegexpMatches">
     <p>def <span class="ident">assertRegexpMatches</span>(</p><p>*args, **kwargs)</p>
     </div>
     
@@ -2629,8 +2504,8 @@ self.assertEqual(the_exception.error_code, 3)
     
   
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.assertRegexpMatches', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.assertRegexpMatches" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.assertRegexpMatches', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.assertRegexpMatches" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">deprecated_func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
     <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span>
         <span class="s1">&#39;Please use {0} instead.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">original_func</span><span class="o">.</span><span class="vm">__name__</span><span class="p">),</span>
@@ -2645,7 +2520,7 @@ self.assertEqual(the_exception.error_code, 3)
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.assertSequenceEqual">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.assertSequenceEqual">
     <p>def <span class="ident">assertSequenceEqual</span>(</p><p>self, seq1, seq2, msg=None, seq_type=None)</p>
     </div>
     
@@ -2663,8 +2538,8 @@ which can be indexed, has a length, and has an equality operator.</p>
     msg: Optional message to use on failure instead of a list of
             differences.</p></div>
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.assertSequenceEqual', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.assertSequenceEqual" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.assertSequenceEqual', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.assertSequenceEqual" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">assertSequenceEqual</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">seq1</span><span class="p">,</span> <span class="n">seq2</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">seq_type</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;An equality assertion for ordered sequences (like lists and tuples).</span>
 <span class="sd">    For the purposes of this function, a valid ordered sequence type is one</span>
@@ -2761,7 +2636,7 @@ which can be indexed, has a length, and has an equality operator.</p>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.assertSetEqual">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.assertSetEqual">
     <p>def <span class="ident">assertSetEqual</span>(</p><p>self, set1, set2, msg=None)</p>
     </div>
     
@@ -2778,8 +2653,8 @@ which can be indexed, has a length, and has an equality operator.</p>
 is optimized for sets specifically (parameters must support a
 difference method).</p></div>
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.assertSetEqual', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.assertSetEqual" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.assertSetEqual', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.assertSetEqual" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">assertSetEqual</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">set1</span><span class="p">,</span> <span class="n">set2</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;A set-specific equality assertion.</span>
 <span class="sd">    Args:</span>
@@ -2825,7 +2700,7 @@ difference method).</p></div>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.assertTrue">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.assertTrue">
     <p>def <span class="ident">assertTrue</span>(</p><p>self, expr, msg=None)</p>
     </div>
     
@@ -2834,8 +2709,8 @@ difference method).</p></div>
   
     <div class="desc"><p>Check that the expression is true.</p></div>
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.assertTrue', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.assertTrue" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.assertTrue', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.assertTrue" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">assertTrue</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">expr</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Check that the expression is true.&quot;&quot;&quot;</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">expr</span><span class="p">:</span>
@@ -2850,7 +2725,7 @@ difference method).</p></div>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.assertTupleEqual">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.assertTupleEqual">
     <p>def <span class="ident">assertTupleEqual</span>(</p><p>self, tuple1, tuple2, msg=None)</p>
     </div>
     
@@ -2864,8 +2739,8 @@ difference method).</p></div>
     msg: Optional message to use on failure instead of a list of
             differences.</p></div>
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.assertTupleEqual', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.assertTupleEqual" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.assertTupleEqual', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.assertTupleEqual" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">assertTupleEqual</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tuple1</span><span class="p">,</span> <span class="n">tuple2</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;A tuple-specific equality assertion.</span>
 <span class="sd">    Args:</span>
@@ -2884,7 +2759,7 @@ difference method).</p></div>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.assertWarns">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.assertWarns">
     <p>def <span class="ident">assertWarns</span>(</p><p>self, expected_warning, *args, **kwargs)</p>
     </div>
     
@@ -2917,8 +2792,8 @@ the_warning = cm.warning
 self.assertEqual(the_warning.some_attribute, 147)
 </pre></div></div>
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.assertWarns', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.assertWarns" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.assertWarns', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.assertWarns" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">assertWarns</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">expected_warning</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Fail unless a warning of class warnClass is triggered</span>
 <span class="sd">       by the callable when invoked with specified positional and</span>
@@ -2953,7 +2828,7 @@ self.assertEqual(the_warning.some_attribute, 147)
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.assertWarnsRegex">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.assertWarnsRegex">
     <p>def <span class="ident">assertWarnsRegex</span>(</p><p>self, expected_warning, expected_regex, *args, **kwargs)</p>
     </div>
     
@@ -2973,8 +2848,8 @@ are considered successful matches.</p>
     msg: Optional message used in case of failure. Can only be used
             when assertWarnsRegex is used as a context manager.</p></div>
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.assertWarnsRegex', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.assertWarnsRegex" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.assertWarnsRegex', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.assertWarnsRegex" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">assertWarnsRegex</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">expected_warning</span><span class="p">,</span> <span class="n">expected_regex</span><span class="p">,</span>
                      <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Asserts that the message in a triggered warning matches a regexp.</span>
@@ -3001,7 +2876,7 @@ are considered successful matches.</p>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.assert_">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.assert_">
     <p>def <span class="ident">assert_</span>(</p><p>*args, **kwargs)</p>
     </div>
     
@@ -3009,8 +2884,8 @@ are considered successful matches.</p>
     
   
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.assert_', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.assert_" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.assert_', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.assert_" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">deprecated_func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
     <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span>
         <span class="s1">&#39;Please use {0} instead.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">original_func</span><span class="o">.</span><span class="vm">__name__</span><span class="p">),</span>
@@ -3025,7 +2900,7 @@ are considered successful matches.</p>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.countTestCases">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.countTestCases">
     <p>def <span class="ident">countTestCases</span>(</p><p>self)</p>
     </div>
     
@@ -3033,8 +2908,8 @@ are considered successful matches.</p>
     
   
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.countTestCases', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.countTestCases" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.countTestCases', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.countTestCases" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">countTestCases</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="k">return</span> <span class="mi">1</span>
 </pre></div>
@@ -3046,7 +2921,7 @@ are considered successful matches.</p>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.debug">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.debug">
     <p>def <span class="ident">debug</span>(</p><p>self)</p>
     </div>
     
@@ -3055,8 +2930,8 @@ are considered successful matches.</p>
   
     <div class="desc"><p>Run the test without collecting errors in a TestResult</p></div>
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.debug', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.debug" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.debug', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.debug" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">debug</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Run the test without collecting errors in a TestResult&quot;&quot;&quot;</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">setUp</span><span class="p">()</span>
@@ -3074,7 +2949,7 @@ are considered successful matches.</p>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.defaultTestResult">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.defaultTestResult">
     <p>def <span class="ident">defaultTestResult</span>(</p><p>self)</p>
     </div>
     
@@ -3082,8 +2957,8 @@ are considered successful matches.</p>
     
   
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.defaultTestResult', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.defaultTestResult" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.defaultTestResult', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.defaultTestResult" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">defaultTestResult</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">result</span><span class="o">.</span><span class="n">TestResult</span><span class="p">()</span>
 </pre></div>
@@ -3095,7 +2970,7 @@ are considered successful matches.</p>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.doCleanups">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.doCleanups">
     <p>def <span class="ident">doCleanups</span>(</p><p>self)</p>
     </div>
     
@@ -3105,8 +2980,8 @@ are considered successful matches.</p>
     <div class="desc"><p>Execute all cleanup functions. Normally called for you after
 tearDown.</p></div>
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.doCleanups', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.doCleanups" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.doCleanups', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.doCleanups" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">doCleanups</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Execute all cleanup functions. Normally called for you after</span>
 <span class="sd">    tearDown.&quot;&quot;&quot;</span>
@@ -3127,7 +3002,7 @@ tearDown.</p></div>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.fail">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.fail">
     <p>def <span class="ident">fail</span>(</p><p>self, msg=None)</p>
     </div>
     
@@ -3136,8 +3011,8 @@ tearDown.</p></div>
   
     <div class="desc"><p>Fail immediately, with the given message.</p></div>
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.fail', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.fail" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.fail', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.fail" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">fail</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Fail immediately, with the given message.&quot;&quot;&quot;</span>
     <span class="k">raise</span> <span class="bp">self</span><span class="o">.</span><span class="n">failureException</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
@@ -3150,7 +3025,7 @@ tearDown.</p></div>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.failIf">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.failIf">
     <p>def <span class="ident">failIf</span>(</p><p>*args, **kwargs)</p>
     </div>
     
@@ -3158,8 +3033,8 @@ tearDown.</p></div>
     
   
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.failIf', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.failIf" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.failIf', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.failIf" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">deprecated_func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
     <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span>
         <span class="s1">&#39;Please use {0} instead.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">original_func</span><span class="o">.</span><span class="vm">__name__</span><span class="p">),</span>
@@ -3174,7 +3049,7 @@ tearDown.</p></div>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.failIfAlmostEqual">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.failIfAlmostEqual">
     <p>def <span class="ident">failIfAlmostEqual</span>(</p><p>*args, **kwargs)</p>
     </div>
     
@@ -3182,8 +3057,8 @@ tearDown.</p></div>
     
   
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.failIfAlmostEqual', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.failIfAlmostEqual" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.failIfAlmostEqual', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.failIfAlmostEqual" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">deprecated_func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
     <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span>
         <span class="s1">&#39;Please use {0} instead.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">original_func</span><span class="o">.</span><span class="vm">__name__</span><span class="p">),</span>
@@ -3198,7 +3073,7 @@ tearDown.</p></div>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.failIfEqual">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.failIfEqual">
     <p>def <span class="ident">failIfEqual</span>(</p><p>*args, **kwargs)</p>
     </div>
     
@@ -3206,8 +3081,8 @@ tearDown.</p></div>
     
   
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.failIfEqual', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.failIfEqual" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.failIfEqual', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.failIfEqual" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">deprecated_func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
     <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span>
         <span class="s1">&#39;Please use {0} instead.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">original_func</span><span class="o">.</span><span class="vm">__name__</span><span class="p">),</span>
@@ -3222,7 +3097,7 @@ tearDown.</p></div>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.failUnless">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.failUnless">
     <p>def <span class="ident">failUnless</span>(</p><p>*args, **kwargs)</p>
     </div>
     
@@ -3230,8 +3105,8 @@ tearDown.</p></div>
     
   
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.failUnless', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.failUnless" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.failUnless', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.failUnless" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">deprecated_func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
     <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span>
         <span class="s1">&#39;Please use {0} instead.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">original_func</span><span class="o">.</span><span class="vm">__name__</span><span class="p">),</span>
@@ -3246,7 +3121,7 @@ tearDown.</p></div>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.failUnlessAlmostEqual">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.failUnlessAlmostEqual">
     <p>def <span class="ident">failUnlessAlmostEqual</span>(</p><p>*args, **kwargs)</p>
     </div>
     
@@ -3254,8 +3129,8 @@ tearDown.</p></div>
     
   
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.failUnlessAlmostEqual', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.failUnlessAlmostEqual" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.failUnlessAlmostEqual', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.failUnlessAlmostEqual" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">deprecated_func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
     <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span>
         <span class="s1">&#39;Please use {0} instead.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">original_func</span><span class="o">.</span><span class="vm">__name__</span><span class="p">),</span>
@@ -3270,7 +3145,7 @@ tearDown.</p></div>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.failUnlessEqual">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.failUnlessEqual">
     <p>def <span class="ident">failUnlessEqual</span>(</p><p>*args, **kwargs)</p>
     </div>
     
@@ -3278,8 +3153,8 @@ tearDown.</p></div>
     
   
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.failUnlessEqual', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.failUnlessEqual" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.failUnlessEqual', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.failUnlessEqual" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">deprecated_func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
     <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span>
         <span class="s1">&#39;Please use {0} instead.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">original_func</span><span class="o">.</span><span class="vm">__name__</span><span class="p">),</span>
@@ -3294,7 +3169,7 @@ tearDown.</p></div>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.failUnlessRaises">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.failUnlessRaises">
     <p>def <span class="ident">failUnlessRaises</span>(</p><p>*args, **kwargs)</p>
     </div>
     
@@ -3302,8 +3177,8 @@ tearDown.</p></div>
     
   
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.failUnlessRaises', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.failUnlessRaises" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.failUnlessRaises', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.failUnlessRaises" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">deprecated_func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
     <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span>
         <span class="s1">&#39;Please use {0} instead.&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">original_func</span><span class="o">.</span><span class="vm">__name__</span><span class="p">),</span>
@@ -3318,7 +3193,7 @@ tearDown.</p></div>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.id">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.id">
     <p>def <span class="ident">id</span>(</p><p>self)</p>
     </div>
     
@@ -3326,8 +3201,8 @@ tearDown.</p></div>
     
   
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.id', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.id" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.id', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.id" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">id</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="k">return</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">.</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">strclass</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">_testMethodName</span><span class="p">)</span>
 </pre></div>
@@ -3339,7 +3214,7 @@ tearDown.</p></div>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.run">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.run">
     <p>def <span class="ident">run</span>(</p><p>self, result=None)</p>
     </div>
     
@@ -3347,8 +3222,8 @@ tearDown.</p></div>
     
   
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.run', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.run" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.run', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.run" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">result</span><span class="o">=</span><span class="bp">None</span><span class="p">):</span>
     <span class="n">orig_result</span> <span class="o">=</span> <span class="n">result</span>
     <span class="k">if</span> <span class="n">result</span> <span class="ow">is</span> <span class="bp">None</span><span class="p">:</span>
@@ -3420,7 +3295,7 @@ tearDown.</p></div>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.setUp">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.setUp">
     <p>def <span class="ident">setUp</span>(</p><p>self)</p>
     </div>
     
@@ -3429,8 +3304,8 @@ tearDown.</p></div>
   
     <div class="desc"><p>Hook method for setting up the test fixture before exercising it.</p></div>
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.setUp', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.setUp" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.setUp', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.setUp" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">setUp</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="s2">&quot;Hook method for setting up the test fixture before exercising it.&quot;</span>
     <span class="k">pass</span>
@@ -3443,7 +3318,7 @@ tearDown.</p></div>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.shortDescription">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.shortDescription">
     <p>def <span class="ident">shortDescription</span>(</p><p>self)</p>
     </div>
     
@@ -3455,8 +3330,8 @@ description has been provided.</p>
 <p>The default implementation of this method returns the first line of
 the specified test method's docstring.</p></div>
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.shortDescription', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.shortDescription" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.shortDescription', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.shortDescription" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">shortDescription</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Returns a one-line description of the test, or None if no</span>
 <span class="sd">    description has been provided.</span>
@@ -3474,7 +3349,7 @@ the specified test method's docstring.</p></div>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.skipTest">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.skipTest">
     <p>def <span class="ident">skipTest</span>(</p><p>self, reason)</p>
     </div>
     
@@ -3483,8 +3358,8 @@ the specified test method's docstring.</p></div>
   
     <div class="desc"><p>Skip this test.</p></div>
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.skipTest', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.skipTest" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.skipTest', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.skipTest" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">skipTest</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">reason</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Skip this test.&quot;&quot;&quot;</span>
     <span class="k">raise</span> <span class="n">SkipTest</span><span class="p">(</span><span class="n">reason</span><span class="p">)</span>
@@ -3497,7 +3372,7 @@ the specified test method's docstring.</p></div>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.subTest">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.subTest">
     <p>def <span class="ident">subTest</span>(</p><p>*args, **kwds)</p>
     </div>
     
@@ -3510,8 +3385,8 @@ keyword parameters.  A failure in the subtest marks the test
 case as failed but resumes execution at the end of the enclosed
 block, allowing further test code to be executed.</p></div>
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.subTest', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.subTest" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.subTest', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.subTest" class="source">
     <div class="codehilite"><pre><span></span><span class="nd">@contextlib.contextmanager</span>
 <span class="k">def</span> <span class="nf">subTest</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="n">_subtest_msg_sentinel</span><span class="p">,</span> <span class="o">**</span><span class="n">params</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;Return a context manager that will return the enclosed block</span>
@@ -3551,7 +3426,7 @@ block, allowing further test code to be executed.</p></div>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.tearDown">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.tearDown">
     <p>def <span class="ident">tearDown</span>(</p><p>self)</p>
     </div>
     
@@ -3560,8 +3435,8 @@ block, allowing further test code to be executed.</p></div>
   
     <div class="desc"><p>Hook method for deconstructing the test fixture after testing it.</p></div>
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.tearDown', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.tearDown" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.tearDown', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.tearDown" class="source">
     <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">tearDown</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="s2">&quot;Hook method for deconstructing the test fixture after testing it.&quot;</span>
     <span class="k">pass</span>
@@ -3574,47 +3449,22 @@ block, allowing further test code to be executed.</p></div>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.test_rephasing">
-    <p>def <span class="ident">test_rephasing</span>(</p><p>self)</p>
+    <div class="name def" id="ckmutil.test_diag.TestDiag.test_svd">
+    <p>def <span class="ident">test_svd</span>(</p><p>self)</p>
     </div>
     
 
     
   
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.test_rephasing', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.test_rephasing" class="source">
-    <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">test_rephasing</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="c1"># a random unitary matrix</span>
-    <span class="n">U</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="o">-</span><span class="mf">0.4825</span><span class="o">-</span><span class="mf">0.5529j</span><span class="p">,</span>  <span class="mf">0.6076</span><span class="o">-</span><span class="mf">0.0129j</span><span class="p">,</span>  <span class="mf">0.1177</span><span class="o">+</span><span class="mf">0.2798j</span><span class="p">],</span>
-               <span class="p">[</span> <span class="mf">0.1227</span><span class="o">-</span><span class="mf">0.5748j</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.1685</span><span class="o">-</span><span class="mf">0.5786j</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.2349</span><span class="o">-</span><span class="mf">0.486j</span> <span class="p">],</span>
-               <span class="p">[</span><span class="o">-</span><span class="mf">0.0755</span><span class="o">+</span><span class="mf">0.3322j</span><span class="p">,</span>  <span class="mf">0.5157</span><span class="o">+</span><span class="mf">0.0393j</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.7321</span><span class="o">-</span><span class="mf">0.2837j</span><span class="p">]])</span>
-    <span class="n">f</span> <span class="o">=</span> <span class="n">mixing_phases</span><span class="p">(</span><span class="n">U</span><span class="p">)</span>
-    <span class="c1"># check that matrix reconstructed from extracted angles and phases</span>
-    <span class="c1"># coincides with original matrix</span>
-    <span class="n">npt</span><span class="o">.</span><span class="n">assert_array_almost_equal</span><span class="p">(</span><span class="n">U</span><span class="p">,</span> <span class="n">unitary_matrix</span><span class="p">(</span><span class="o">**</span><span class="n">f</span><span class="p">),</span>
-        <span class="n">decimal</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
-    <span class="c1"># pathological case: unit matrix. Check that everything is zero</span>
-    <span class="n">f</span> <span class="o">=</span> <span class="n">mixing_phases</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">eye</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
-    <span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">f</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">assertEqual</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="s1">&#39;{} is not zero&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">k</span><span class="p">))</span>
-    <span class="c1"># random mass matrices</span>
-    <span class="n">Mu</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span> <span class="mf">0.6126</span><span class="o">+</span><span class="mf">0.9819j</span><span class="p">,</span>  <span class="mf">0.0165</span><span class="o">+</span><span class="mf">0.3709j</span><span class="p">,</span>  <span class="mf">0.0114</span><span class="o">+</span><span class="mf">0.7819j</span><span class="p">],</span>
-        <span class="p">[</span> <span class="mf">0.6374</span><span class="o">+</span><span class="mf">0.8631j</span><span class="p">,</span>  <span class="mf">0.1249</span><span class="o">+</span><span class="mf">0.8346j</span><span class="p">,</span>  <span class="mf">0.6940</span><span class="o">+</span><span class="mf">0.4495j</span><span class="p">],</span>
-        <span class="p">[</span> <span class="mf">0.1652</span><span class="o">+</span><span class="mf">0.9667j</span><span class="p">,</span>  <span class="mf">0.4952</span><span class="o">+</span><span class="mf">0.1281j</span><span class="p">,</span>  <span class="mf">0.7719</span><span class="o">+</span><span class="mf">0.2325j</span><span class="p">]])</span>
-    <span class="n">Md</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span> <span class="mf">0.2874</span><span class="o">+</span><span class="mf">0.2065j</span><span class="p">,</span>  <span class="mf">0.2210</span><span class="o">+</span><span class="mf">0.9077j</span><span class="p">,</span>  <span class="mf">0.4053</span><span class="o">+</span><span class="mf">0.454j</span> <span class="p">],</span>
-        <span class="p">[</span> <span class="mf">0.0339</span><span class="o">+</span><span class="mf">0.8332j</span><span class="p">,</span>  <span class="mf">0.5286</span><span class="o">+</span><span class="mf">0.6339j</span><span class="p">,</span>  <span class="mf">0.3142</span><span class="o">+</span><span class="mf">0.113j</span> <span class="p">],</span>
-        <span class="p">[</span> <span class="mf">0.9379</span><span class="o">+</span><span class="mf">0.2952j</span><span class="p">,</span>  <span class="mf">0.8488</span><span class="o">+</span><span class="mf">0.634j</span> <span class="p">,</span>  <span class="mf">0.1413</span><span class="o">+</span><span class="mf">0.9175j</span><span class="p">]])</span>
-    <span class="n">UuL</span><span class="p">,</span> <span class="n">Su</span><span class="p">,</span> <span class="n">UuR</span> <span class="o">=</span> <span class="n">msvd</span><span class="p">(</span><span class="n">Mu</span><span class="p">)</span>
-    <span class="n">UdL</span><span class="p">,</span> <span class="n">Sd</span><span class="p">,</span> <span class="n">UdR</span> <span class="o">=</span> <span class="n">msvd</span><span class="p">(</span><span class="n">Md</span><span class="p">)</span>
-    <span class="n">f</span> <span class="o">=</span> <span class="n">mixing_phases</span><span class="p">(</span><span class="n">UuL</span><span class="o">.</span><span class="n">conj</span><span class="p">()</span><span class="o">.</span><span class="n">T</span> <span class="err">@</span> <span class="n">UdL</span><span class="p">)</span>
-    <span class="n">UuL_</span><span class="p">,</span> <span class="n">UdL_</span><span class="p">,</span> <span class="n">UuR_</span><span class="p">,</span> <span class="n">UdR_</span> <span class="o">=</span> <span class="n">rephase_standard</span><span class="p">(</span><span class="n">UuL</span><span class="p">,</span> <span class="n">UdL</span><span class="p">,</span> <span class="n">UuR</span><span class="p">,</span> <span class="n">UdR</span><span class="p">)</span>
-    <span class="c1"># rephased CKM</span>
-    <span class="n">K</span> <span class="o">=</span> <span class="n">UuL_</span><span class="o">.</span><span class="n">conj</span><span class="p">()</span><span class="o">.</span><span class="n">T</span> <span class="err">@</span> <span class="n">UdL_</span>
-    <span class="c1"># CKM in standard parametrization</span>
-    <span class="n">K_std</span> <span class="o">=</span> <span class="n">unitary_matrix</span><span class="p">(</span><span class="n">f</span><span class="p">[</span><span class="s1">&#39;t12&#39;</span><span class="p">],</span> <span class="n">f</span><span class="p">[</span><span class="s1">&#39;t13&#39;</span><span class="p">],</span> <span class="n">f</span><span class="p">[</span><span class="s1">&#39;t23&#39;</span><span class="p">],</span> <span class="n">f</span><span class="p">[</span><span class="s1">&#39;delta&#39;</span><span class="p">],</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
-    <span class="c1"># ... should be equal!</span>
-    <span class="n">npt</span><span class="o">.</span><span class="n">assert_array_almost_equal</span><span class="p">(</span><span class="n">K</span><span class="p">,</span> <span class="n">K_std</span><span class="p">,</span> <span class="n">decimal</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.test_svd', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.test_svd" class="source">
+    <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">test_svd</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">U</span><span class="p">,</span> <span class="n">S</span><span class="p">,</span> <span class="n">V</span> <span class="o">=</span> <span class="n">msvd</span><span class="p">(</span><span class="n">Mc</span><span class="p">)</span>
+    <span class="n">npt</span><span class="o">.</span><span class="n">assert_array_almost_equal</span><span class="p">(</span><span class="n">U</span> <span class="err">@</span> <span class="n">np</span><span class="o">.</span><span class="n">diag</span><span class="p">(</span><span class="n">S</span><span class="p">)</span> <span class="err">@</span> <span class="n">V</span><span class="o">.</span><span class="n">conj</span><span class="p">()</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">Mc</span><span class="p">,</span> <span class="n">decimal</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+    <span class="n">npt</span><span class="o">.</span><span class="n">assert_array_equal</span><span class="p">(</span><span class="n">S</span><span class="o">.</span><span class="n">imag</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]))</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="n">S</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">S</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">assertTrue</span><span class="p">(</span><span class="n">S</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">S</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
 </pre></div>
 
   </div>
@@ -3624,39 +3474,20 @@ block, allowing further test code to be executed.</p></div>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.test_rephasing_pmns">
-    <p>def <span class="ident">test_rephasing_pmns</span>(</p><p>self)</p>
+    <div class="name def" id="ckmutil.test_diag.TestDiag.test_takfac">
+    <p>def <span class="ident">test_takfac</span>(</p><p>self)</p>
     </div>
     
 
     
   
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.test_rephasing_pmns', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.test_rephasing_pmns" class="source">
-    <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">test_rephasing_pmns</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="c1"># a random unitary matrix</span>
-    <span class="n">U</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="o">-</span><span class="mf">0.4825</span><span class="o">-</span><span class="mf">0.5529j</span><span class="p">,</span>  <span class="mf">0.6076</span><span class="o">-</span><span class="mf">0.0129j</span><span class="p">,</span>  <span class="mf">0.1177</span><span class="o">+</span><span class="mf">0.2798j</span><span class="p">],</span>
-               <span class="p">[</span> <span class="mf">0.1227</span><span class="o">-</span><span class="mf">0.5748j</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.1685</span><span class="o">-</span><span class="mf">0.5786j</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.2349</span><span class="o">-</span><span class="mf">0.486j</span> <span class="p">],</span>
-               <span class="p">[</span><span class="o">-</span><span class="mf">0.0755</span><span class="o">+</span><span class="mf">0.3322j</span><span class="p">,</span>  <span class="mf">0.5157</span><span class="o">+</span><span class="mf">0.0393j</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.7321</span><span class="o">-</span><span class="mf">0.2837j</span><span class="p">]])</span>
-    <span class="c1"># a random complex matrix</span>
-    <span class="n">Me</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span> <span class="mf">0.6126</span><span class="o">+</span><span class="mf">0.9819j</span><span class="p">,</span>  <span class="mf">0.0165</span><span class="o">+</span><span class="mf">0.3709j</span><span class="p">,</span>  <span class="mf">0.0114</span><span class="o">+</span><span class="mf">0.7819j</span><span class="p">],</span>
-        <span class="p">[</span> <span class="mf">0.6374</span><span class="o">+</span><span class="mf">0.8631j</span><span class="p">,</span>  <span class="mf">0.1249</span><span class="o">+</span><span class="mf">0.8346j</span><span class="p">,</span>  <span class="mf">0.6940</span><span class="o">+</span><span class="mf">0.4495j</span><span class="p">],</span>
-        <span class="p">[</span> <span class="mf">0.1652</span><span class="o">+</span><span class="mf">0.9667j</span><span class="p">,</span>  <span class="mf">0.4952</span><span class="o">+</span><span class="mf">0.1281j</span><span class="p">,</span>  <span class="mf">0.7719</span><span class="o">+</span><span class="mf">0.2325j</span><span class="p">]])</span>
-    <span class="c1"># a random complex symmetric matrix</span>
-    <span class="n">Mnu</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span> <span class="mf">0.60203884</span><span class="o">+</span><span class="mf">0.63349682j</span><span class="p">,</span>  <span class="mf">0.36913812</span><span class="o">+</span><span class="mf">0.35568326j</span><span class="p">,</span>  <span class="mf">0.56965889</span><span class="o">+</span><span class="mf">0.42305627j</span><span class="p">],</span>
-       <span class="p">[</span> <span class="mf">0.36913812</span><span class="o">+</span><span class="mf">0.35568326j</span><span class="p">,</span>  <span class="mf">0.62439443</span><span class="o">+</span><span class="mf">0.34918309j</span><span class="p">,</span>  <span class="mf">0.55097246</span><span class="o">+</span><span class="mf">0.55861965j</span><span class="p">],</span>
-       <span class="p">[</span> <span class="mf">0.56965889</span><span class="o">+</span><span class="mf">0.42305627j</span><span class="p">,</span>  <span class="mf">0.55097246</span><span class="o">+</span><span class="mf">0.55861965j</span><span class="p">,</span> <span class="mf">0.19434061</span><span class="o">+</span><span class="mf">0.57985534j</span><span class="p">]])</span>
-    <span class="n">UeL</span><span class="p">,</span> <span class="n">Se</span><span class="p">,</span> <span class="n">UeR</span> <span class="o">=</span> <span class="n">msvd</span><span class="p">(</span><span class="n">Me</span><span class="p">)</span>
-    <span class="n">Unu</span><span class="p">,</span> <span class="n">Snu</span> <span class="o">=</span> <span class="n">mtakfac</span><span class="p">(</span><span class="n">Mnu</span><span class="p">)</span>
-    <span class="n">f</span> <span class="o">=</span> <span class="n">mixing_phases</span><span class="p">(</span><span class="n">UeL</span><span class="o">.</span><span class="n">conj</span><span class="p">()</span><span class="o">.</span><span class="n">T</span> <span class="err">@</span> <span class="n">Unu</span><span class="p">)</span>
-    <span class="n">Unu_</span><span class="p">,</span> <span class="n">UeL_</span><span class="p">,</span> <span class="n">UeR_</span> <span class="o">=</span> <span class="n">rephase_pmns_standard</span><span class="p">(</span><span class="n">Unu</span><span class="p">,</span> <span class="n">UeL</span><span class="p">,</span> <span class="n">UeR</span><span class="p">)</span>
-    <span class="c1"># rephased PMNS</span>
-    <span class="n">U</span> <span class="o">=</span> <span class="n">UeL_</span><span class="o">.</span><span class="n">conj</span><span class="p">()</span><span class="o">.</span><span class="n">T</span> <span class="err">@</span> <span class="n">Unu_</span>
-    <span class="c1"># PMNS in standard parametrization</span>
-    <span class="n">U_std</span> <span class="o">=</span> <span class="n">unitary_matrix</span><span class="p">(</span><span class="n">f</span><span class="p">[</span><span class="s1">&#39;t12&#39;</span><span class="p">],</span> <span class="n">f</span><span class="p">[</span><span class="s1">&#39;t13&#39;</span><span class="p">],</span> <span class="n">f</span><span class="p">[</span><span class="s1">&#39;t23&#39;</span><span class="p">],</span> <span class="n">f</span><span class="p">[</span><span class="s1">&#39;delta&#39;</span><span class="p">],</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">f</span><span class="p">[</span><span class="s1">&#39;phi1&#39;</span><span class="p">],</span> <span class="n">f</span><span class="p">[</span><span class="s1">&#39;phi2&#39;</span><span class="p">])</span>
-    <span class="c1"># ... should be equal!</span>
-    <span class="n">npt</span><span class="o">.</span><span class="n">assert_array_almost_equal</span><span class="p">(</span><span class="n">U</span><span class="p">,</span> <span class="n">U_std</span><span class="p">,</span> <span class="n">decimal</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.test_takfac', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.test_takfac" class="source">
+    <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">test_takfac</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">npt</span><span class="o">.</span><span class="n">assert_array_equal</span><span class="p">(</span><span class="n">Mcs</span> <span class="o">-</span> <span class="n">Mcs</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">)))</span>
+    <span class="n">U</span><span class="p">,</span> <span class="n">S</span> <span class="o">=</span> <span class="n">mtakfac</span><span class="p">(</span><span class="n">Mcs</span><span class="p">)</span>
+    <span class="n">npt</span><span class="o">.</span><span class="n">assert_array_almost_equal</span><span class="p">(</span><span class="n">U</span><span class="o">.</span><span class="n">conj</span><span class="p">()</span> <span class="err">@</span> <span class="n">np</span><span class="o">.</span><span class="n">diag</span><span class="p">(</span><span class="n">S</span><span class="p">)</span> <span class="err">@</span> <span class="n">U</span><span class="o">.</span><span class="n">conj</span><span class="p">()</span><span class="o">.</span><span class="n">T</span><span class="p">,</span> <span class="n">Mcs</span><span class="p">,</span> <span class="n">decimal</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
 </pre></div>
 
   </div>
@@ -3667,7 +3498,7 @@ block, allowing further test code to be executed.</p></div>
           <h3>Methods</h3>
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.setUpClass">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.setUpClass">
     <p>def <span class="ident">setUpClass</span>(</p><p>cls)</p>
     </div>
     
@@ -3676,8 +3507,8 @@ block, allowing further test code to be executed.</p></div>
   
     <div class="desc"><p>Hook method for setting up class fixture before running tests in the class.</p></div>
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.setUpClass', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.setUpClass" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.setUpClass', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.setUpClass" class="source">
     <div class="codehilite"><pre><span></span><span class="nd">@classmethod</span>
 <span class="k">def</span> <span class="nf">setUpClass</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
     <span class="s2">&quot;Hook method for setting up class fixture before running tests in the class.&quot;</span>
@@ -3690,7 +3521,7 @@ block, allowing further test code to be executed.</p></div>
   
             
   <div class="item">
-    <div class="name def" id="ckmutil.test_phases.TestPhases.tearDownClass">
+    <div class="name def" id="ckmutil.test_diag.TestDiag.tearDownClass">
     <p>def <span class="ident">tearDownClass</span>(</p><p>cls)</p>
     </div>
     
@@ -3699,8 +3530,8 @@ block, allowing further test code to be executed.</p></div>
   
     <div class="desc"><p>Hook method for deconstructing the class fixture after running all tests in the class.</p></div>
   <div class="source_cont">
-  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_phases.TestPhases.tearDownClass', this);">Show source &equiv;</a></p>
-  <div id="source-ckmutil.test_phases.TestPhases.tearDownClass" class="source">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.test_diag.TestDiag.tearDownClass', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.test_diag.TestDiag.tearDownClass" class="source">
     <div class="codehilite"><pre><span></span><span class="nd">@classmethod</span>
 <span class="k">def</span> <span class="nf">tearDownClass</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
     <span class="s2">&quot;Hook method for deconstructing the class fixture after running all tests in the class.&quot;</span>

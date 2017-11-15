@@ -1056,6 +1056,7 @@ table {
       
   <ul>
     <li class="mono"><a href="#ckmutil.phases.mixing_phases">mixing_phases</a></li>
+    <li class="mono"><a href="#ckmutil.phases.rephase_pmns_standard">rephase_pmns_standard</a></li>
     <li class="mono"><a href="#ckmutil.phases.rephase_standard">rephase_standard</a></li>
   </ul>
 
@@ -1141,6 +1142,27 @@ general mixing matrices to standard parametrizations.</p>
     <span class="n">Fdelta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">diag</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">([</span><span class="mi">1j</span><span class="o">*</span><span class="n">f</span><span class="p">[</span><span class="s1">&#39;delta1&#39;</span><span class="p">],</span> <span class="mi">1j</span><span class="o">*</span><span class="n">f</span><span class="p">[</span><span class="s1">&#39;delta2&#39;</span><span class="p">],</span> <span class="mi">1j</span><span class="o">*</span><span class="n">f</span><span class="p">[</span><span class="s1">&#39;delta3&#39;</span><span class="p">]]))</span>
     <span class="n">Fphi</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">diag</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">([</span><span class="o">-</span><span class="mi">1j</span><span class="o">*</span><span class="n">f</span><span class="p">[</span><span class="s1">&#39;phi1&#39;</span><span class="p">]</span><span class="o">/</span><span class="mf">2.</span><span class="p">,</span> <span class="o">-</span><span class="mi">1j</span><span class="o">*</span><span class="n">f</span><span class="p">[</span><span class="s1">&#39;phi2&#39;</span><span class="p">]</span><span class="o">/</span><span class="mf">2.</span><span class="p">,</span> <span class="mi">0</span><span class="p">]))</span>
     <span class="k">return</span> <span class="n">UuL</span> <span class="err">@</span> <span class="n">Fdelta</span><span class="p">,</span> <span class="n">UdL</span> <span class="err">@</span> <span class="n">Fphi</span><span class="o">.</span><span class="n">conj</span><span class="p">(),</span> <span class="n">UuR</span> <span class="err">@</span> <span class="n">Fdelta</span><span class="p">,</span> <span class="n">UdR</span> <span class="err">@</span> <span class="n">Fphi</span><span class="o">.</span><span class="n">conj</span><span class="p">()</span>
+
+<span class="k">def</span> <span class="nf">rephase_pmns_standard</span><span class="p">(</span><span class="n">Unu</span><span class="p">,</span> <span class="n">UeL</span><span class="p">,</span> <span class="n">UeR</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Function to rephase the lepton rotation matrices in order to</span>
+<span class="sd">    obtain the PMNS matrix in standard parametrization.</span>
+
+<span class="sd">    The input matrices are assumed to diagonalize the charged lepton and</span>
+<span class="sd">    neutrino mass matrices like</span>
+
+<span class="sd">    ```</span>
+<span class="sd">    UeL.conj().T @ Me @ UeR = Me_diag</span>
+<span class="sd">    Unu.T @ Mnu @ Unu = Mnu_diag</span>
+<span class="sd">    ```</span>
+
+<span class="sd">    The PMNS matrix is given as `UPMNS = UeL.conj().T @ Unu`.</span>
+
+<span class="sd">    Returns a tuple with the rephased versions of the input matrices.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">U</span> <span class="o">=</span> <span class="n">UeL</span><span class="o">.</span><span class="n">conj</span><span class="p">()</span><span class="o">.</span><span class="n">T</span> <span class="err">@</span> <span class="n">Unu</span>
+    <span class="n">f</span> <span class="o">=</span> <span class="n">mixing_phases</span><span class="p">(</span><span class="n">U</span><span class="p">)</span>
+    <span class="n">Fdelta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">diag</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">([</span><span class="mi">1j</span><span class="o">*</span><span class="n">f</span><span class="p">[</span><span class="s1">&#39;delta1&#39;</span><span class="p">],</span> <span class="mi">1j</span><span class="o">*</span><span class="n">f</span><span class="p">[</span><span class="s1">&#39;delta2&#39;</span><span class="p">],</span> <span class="mi">1j</span><span class="o">*</span><span class="n">f</span><span class="p">[</span><span class="s1">&#39;delta3&#39;</span><span class="p">]]))</span>
+    <span class="k">return</span> <span class="n">Unu</span><span class="p">,</span> <span class="n">UeL</span> <span class="err">@</span> <span class="n">Fdelta</span><span class="p">,</span> <span class="n">UeR</span> <span class="err">@</span> <span class="n">Fdelta</span>
 </pre></div>
 
   </div>
@@ -1198,6 +1220,53 @@ convention.</p></div>
     <span class="n">f</span><span class="p">[</span><span class="s1">&#39;phi1&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">phase</span><span class="p">(</span><span class="n">exp</span><span class="p">(</span><span class="mi">1j</span><span class="o">*</span><span class="n">f</span><span class="p">[</span><span class="s1">&#39;delta1&#39;</span><span class="p">])</span> <span class="o">*</span> <span class="n">U</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">conj</span><span class="p">())</span>
     <span class="n">f</span><span class="p">[</span><span class="s1">&#39;phi2&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">phase</span><span class="p">(</span><span class="n">exp</span><span class="p">(</span><span class="mi">1j</span><span class="o">*</span><span class="n">f</span><span class="p">[</span><span class="s1">&#39;delta1&#39;</span><span class="p">])</span> <span class="o">*</span> <span class="n">U</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">conj</span><span class="p">())</span>
     <span class="k">return</span> <span class="n">f</span>
+</pre></div>
+
+  </div>
+</div>
+
+  </div>
+  
+      
+  <div class="item">
+    <div class="name def" id="ckmutil.phases.rephase_pmns_standard">
+    <p>def <span class="ident">rephase_pmns_standard</span>(</p><p>Unu, UeL, UeR)</p>
+    </div>
+    
+
+    
+  
+    <div class="desc"><p>Function to rephase the lepton rotation matrices in order to
+obtain the PMNS matrix in standard parametrization.</p>
+<p>The input matrices are assumed to diagonalize the charged lepton and
+neutrino mass matrices like</p>
+<p><code>UeL.conj().T @ Me @ UeR = Me_diag
+Unu.T @ Mnu @ Unu = Mnu_diag</code></p>
+<p>The PMNS matrix is given as <code>UPMNS = UeL.conj().T @ Unu</code>.</p>
+<p>Returns a tuple with the rephased versions of the input matrices.</p></div>
+  <div class="source_cont">
+  <p class="source_link"><a href="javascript:void(0);" onclick="toggle('source-ckmutil.phases.rephase_pmns_standard', this);">Show source &equiv;</a></p>
+  <div id="source-ckmutil.phases.rephase_pmns_standard" class="source">
+    <div class="codehilite"><pre><span></span><span class="k">def</span> <span class="nf">rephase_pmns_standard</span><span class="p">(</span><span class="n">Unu</span><span class="p">,</span> <span class="n">UeL</span><span class="p">,</span> <span class="n">UeR</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Function to rephase the lepton rotation matrices in order to</span>
+<span class="sd">    obtain the PMNS matrix in standard parametrization.</span>
+
+<span class="sd">    The input matrices are assumed to diagonalize the charged lepton and</span>
+<span class="sd">    neutrino mass matrices like</span>
+
+<span class="sd">    ```</span>
+<span class="sd">    UeL.conj().T @ Me @ UeR = Me_diag</span>
+<span class="sd">    Unu.T @ Mnu @ Unu = Mnu_diag</span>
+<span class="sd">    ```</span>
+
+<span class="sd">    The PMNS matrix is given as `UPMNS = UeL.conj().T @ Unu`.</span>
+
+<span class="sd">    Returns a tuple with the rephased versions of the input matrices.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">U</span> <span class="o">=</span> <span class="n">UeL</span><span class="o">.</span><span class="n">conj</span><span class="p">()</span><span class="o">.</span><span class="n">T</span> <span class="err">@</span> <span class="n">Unu</span>
+    <span class="n">f</span> <span class="o">=</span> <span class="n">mixing_phases</span><span class="p">(</span><span class="n">U</span><span class="p">)</span>
+    <span class="n">Fdelta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">diag</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">([</span><span class="mi">1j</span><span class="o">*</span><span class="n">f</span><span class="p">[</span><span class="s1">&#39;delta1&#39;</span><span class="p">],</span> <span class="mi">1j</span><span class="o">*</span><span class="n">f</span><span class="p">[</span><span class="s1">&#39;delta2&#39;</span><span class="p">],</span> <span class="mi">1j</span><span class="o">*</span><span class="n">f</span><span class="p">[</span><span class="s1">&#39;delta3&#39;</span><span class="p">]]))</span>
+    <span class="k">return</span> <span class="n">Unu</span><span class="p">,</span> <span class="n">UeL</span> <span class="err">@</span> <span class="n">Fdelta</span><span class="p">,</span> <span class="n">UeR</span> <span class="err">@</span> <span class="n">Fdelta</span>
 </pre></div>
 
   </div>
