@@ -2,7 +2,7 @@
 general mixing matrices to standard parametrizations."""
 
 import numpy as np
-from math import asin, atan, sin, cos
+from math import asin, atan, sin, cos, pi
 from cmath import phase, exp
 
 def mixing_phases(U):
