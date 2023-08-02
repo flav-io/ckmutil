@@ -1,6 +1,7 @@
 """Functions for the diagonalization of fermion mass matrices."""
 
 import numpy as np
+from scipy.linalg import fractional_matrix_power
 
 def msvd(m):
   """Modified singular value decomposition.
@@ -24,6 +25,10 @@ def mtakfac(m):
   are sorted in ascending order (small to large).
   """
   u, s, v = msvd(np.asarray(m, dtype=complex))
-  f = np.sqrt(u.conj().T @ v.conj())
-  w = v @ f
+  z2 = u.conj().T @ v.conj()
+  if np.all(np.abs(z2 - np.diag(np.diag(z2))) < 1e-14): # if z2 is diagonal
+    z = np.sqrt(z2)
+  else:
+    z = fractional_matrix_power(z2,1/2)
+  w = v @ z
   return w, s
