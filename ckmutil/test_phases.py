@@ -33,7 +33,7 @@ def random_unitary_matrix(angles):
 
 class TestPhases(unittest.TestCase):
     def test_parameter_extraction(self):
-        for angles in product([0,np.pi/2, 'rand'],repeat=3):
+        for angles in product([0, pi/2, 'rand'],repeat=3):
             for _ in range(100): # repeat 100 times to avoid random agreement
                 M = random_unitary_matrix(angles)
                 f = mixing_phases(M)
