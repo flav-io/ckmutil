@@ -23,9 +23,10 @@ def random_angle():
 def random_phase():
     return np.random.uniform(0,2*pi)
 def random_unitary_matrix(angles):
-    t1 = random_angle() if angles[0] == 'rand' else angles[0]
-    t2 = random_angle() if angles[1] == 'rand' else angles[1]
-    t3 = random_angle() if angles[2] == 'rand' else angles[2]
+    t1, t2, t3 = (
+        random_angle() if angle == 'rand' else angle
+        for angle in angles
+    )
     return unitary_matrix(
         t1, t2, t3,
         random_phase(),
