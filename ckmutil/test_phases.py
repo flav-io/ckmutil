@@ -23,10 +23,7 @@ def random_angle():
 def random_phase():
     return np.random.uniform(0,2*pi)
 def random_unitary_matrix(angles):
-    t1, t2, t3 = (
-        random_angle() if angle == 'rand' else angle
-        for angle in angles
-    )
+    t1, t2, t3 = (random_angle() if angle == 'rand' else angle for angle in angles)
     return unitary_matrix(
         t1, t2, t3,
         random_phase(),
@@ -36,7 +33,7 @@ def random_unitary_matrix(angles):
 
 class TestPhases(unittest.TestCase):
     def test_parameter_extraction(self):
-        for angles in product([0,np.pi, 'rand'],repeat=3):
+        for angles in product([0,np.pi/2, 'rand'],repeat=3):
             for _ in range(100): # repeat 100 times to avoid random agreement
                 M = random_unitary_matrix(angles)
                 f = mixing_phases(M)
