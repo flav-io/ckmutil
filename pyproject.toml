@@ -12,7 +12,7 @@ readme = "README.md"
 license = {text = "MIT"}
 authors = [{name = "David M. Straub", email = "straub@protonmail.com"}]
 dependencies = [
-  "numpy>=1.21",
+  "numpy>=1.20", "scipy"
 ]
 urls = {Homepage = "https://davidmstraub.github.io/ckmutil"}
 
