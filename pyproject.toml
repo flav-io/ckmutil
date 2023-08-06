@@ -1,0 +1,23 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = [
+  "setuptools>=61.2",
+]
+
+[project]
+name = "ckmutil"
+version = "0.4.0"
+description = "Useful functions for dealing with quark and lepton mixing matrices."
+readme = "README.md"
+license = {text = "MIT"}
+authors = [{name = "David M. Straub", email = "straub@protonmail.com"}]
+dependencies = [
+  "numpy>=1.21",
+]
+urls = {Homepage = "https://davidmstraub.github.io/ckmutil"}
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages]
+find = {namespaces = false}
