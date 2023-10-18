@@ -6,6 +6,7 @@ from ckmutil.diag import msvd, mtakfac
 import numpy as np
 from math import sin, cos
 from cmath import exp
+from itertools import product
 
 # some auxiliary functions
 def diagonal_phase_matrix(a1, a2, a3):
@@ -17,8 +18,27 @@ def unitary_matrix(t12, t13, t23, delta, delta1, delta2, delta3, phi1, phi2):
     ph2 = diagonal_phase_matrix(-phi1/2, -phi2/2, 0)
     ckm = ckm_standard(t12, t13, t23, delta)
     return np.dot(ph1, np.dot(ckm, ph2))
+def random_angle():
+    return np.random.uniform(0,pi/2)
+def random_phase():
+    return np.random.uniform(0,2*pi)
+def random_unitary_matrix(angles):
+    t1, t2, t3 = (random_angle() if angle == 'rand' else angle for angle in angles)
+    return unitary_matrix(
+        t1, t2, t3,
+        random_phase(),
+        random_phase(), random_phase(), random_phase(),
+        random_phase(), random_phase()
+    )
 
 class TestPhases(unittest.TestCase):
+    def test_parameter_extraction(self):
+        for angles in product([0, pi/2, 'rand'],repeat=3):
+            for _ in range(100): # repeat 100 times to avoid random agreement
+                M = random_unitary_matrix(angles)
+                f = mixing_phases(M)
+                npt.assert_array_almost_equal(unitary_matrix(**f), M, decimal=7)
+
     def test_rephasing(self):
         # a random unitary matrix
         U = np.array([[-0.4825-0.5529j,  0.6076-0.0129j,  0.1177+0.2798j],
