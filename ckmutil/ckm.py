@@ -95,8 +95,8 @@ def beta_gamma_to_delta(beta, gamma, t23, delta_expansion_order=None):
 
     Parameters
     ----------
-    - `gamma`: Unitarity Triangle angle $\gamma$ in radians
     - `beta`: Unitarity Triangle angle $\beta$ in radians
+    - `gamma`: Unitarity Triangle angle $\gamma$ in radians
     - `t23`: CKM angle $\theta_{23}$ in radians
 
     Optional parameters
