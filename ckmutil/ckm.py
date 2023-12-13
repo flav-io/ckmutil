@@ -197,7 +197,8 @@ def standard_to_tree(t12, t13, t23, delta):
     Vus = s12 * c13
     Vub = s13
     Vcb = s23 * c13
-    gamma = np.angle(-np.exp(1j*delta)/(-s12*c23-c12*s23*s13*np.exp(1j*delta)))
+    Vcd_complex = - s12*c23 - c12*s23*s13 * np.exp(1j*delta)
+    gamma = np.angle(-np.exp(1j*delta)/Vcd_complex)
     return Vus, Vub, Vcb, gamma
 
 def beta_gamma_to_standard(Vus, Vcb, beta, gamma, delta_expansion_order=None):
@@ -319,12 +320,10 @@ def wolfenstein_to_standard(laC, A, rhobar, etabar):
     - $\eta \approx \bar\eta/(1-\lambda^2/2)$
     """
     rho_plus_i_eta = sqrt(1-A**2*laC**4)*(rhobar + 1j*etabar)/(sqrt(1-laC**2)*(1 - A**2*laC**4*(rhobar + 1j*etabar))) # e.g. Eq. (93) in arXiv:2206.07501
-    rho = rho_plus_i_eta.real
-    eta = rho_plus_i_eta.imag
     s12 = laC
     s23 = A*laC**2
-    s13 = A*laC**3*np.abs((rho - 1j*eta))
-    delta = np.angle((rho + 1j*eta))
+    s13 = A*laC**3*np.abs(rho_plus_i_eta)
+    delta = np.angle(rho_plus_i_eta)
     t12 = np.arcsin(s12)
     t13 = np.arcsin(s13)
     t23 = np.arcsin(s23)
@@ -371,10 +370,8 @@ def standard_to_wolfenstein(t12, t13, t23, delta):
     """
     laC = np.sin(t12)
     A = np.sin(t23)/laC**2
-    rho_minus_i_eta = np.sin(t13) * np.exp(-1j*delta) / (A*laC**3)
-    rho = rho_minus_i_eta.real
-    eta = -rho_minus_i_eta.imag
-    rhobar_plus_i_etabar = sqrt(1-laC**2)*(rho + 1j*eta)/(sqrt(1-A**2*laC**4)+sqrt(1-laC**2)*A**2*laC**4*(rho + 1j*eta)) # e.g. Eq. (92) in arXiv:2206.07501
+    rho_plus_i_eta = np.sin(t13) * np.exp(1j*delta) / (A*laC**3)
+    rhobar_plus_i_etabar = sqrt(1-laC**2)*rho_plus_i_eta/(sqrt(1-A**2*laC**4)+sqrt(1-laC**2)*A**2*laC**4*rho_plus_i_eta) # e.g. Eq. (92) in arXiv:2206.07501
     rhobar = rhobar_plus_i_etabar.real
     etabar = rhobar_plus_i_etabar.imag
     return laC, A, rhobar, etabar
