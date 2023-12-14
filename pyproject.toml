@@ -6,7 +6,7 @@ requires = [
 
 [project]
 name = "ckmutil"
-version = "1.0.2"
+version = "1.1.0"
 description = "Useful functions for dealing with quark and lepton mixing matrices."
 readme = "README.md"
 license = {text = "MIT"}
